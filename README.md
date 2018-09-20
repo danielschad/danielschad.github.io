@@ -1,4 +1,4 @@
-# Daniel J. Schad
+## Daniel J. Schad
 
 ![](images/Foto_Daniel.jpg?raw=true)
 
