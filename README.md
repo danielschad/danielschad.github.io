@@ -1,3 +1,8 @@
-# danielschad.github.io
+# Daniel J. Schad
 
-This is a test of this website. Let's see how it goes.
+![](images/Foto_Daniel.jpg?raw=true)
+
+EB Cognitive Sciences
+University of Potsdam
+14469 Potsdam
+Germany
