@@ -4,4 +4,4 @@ navbar:
   title: "Daniel J. Schad"
   left:
     - text: "Licence"
-      href: LICENCE
+      href: license.html
