@@ -1,6 +1,6 @@
 ## Daniel J. Schad
 
-![](images/Foto_Daniel1.jpg?raw=true)
+![](images/Foto_Daniel.jpg?raw=true)
 
 EB Cognitive Sciences
 
