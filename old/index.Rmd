@@ -1,0 +1,21 @@
+---
+title: "Daniel J. Schad"
+output:
+  html_document:
+        toc: no
+---
+
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("images/Foto_Daniel.jpg")
+```
+
+# Affiliation
+
+Area of Excellence Cognitive Science
+
+University of Potsdam
+
+Potsdam
+
+Germany
+

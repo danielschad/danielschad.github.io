@@ -1,0 +1,7 @@
+name: "Daniel J. Schad"
+theme: jekyll-theme-slate
+navbar:
+  title: "Daniel J. Schad"
+  left:
+    - text: "Licence"
+      href: license.html
