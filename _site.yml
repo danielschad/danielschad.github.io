@@ -1,10 +1,14 @@
-name: "my-website"
+name: "Daniel J. Schad"
 navbar:
-  title: "My Website"
+  title: "Daniel J. Schad"
   left:
     - text: "Home"
       href: index.html
-    - text: "Viridis Colors"
+    - text: "Research"
       href: 1-example.html
-    - text: "Terrain Colors"
+    - text: "Publications"
+      href: 3-inline.html
+    - text: "License"
+      href: license.html
+    - text: "Contact"
       href: 3-inline.html
