@@ -1,5 +1,5 @@
 ---
-title: "About R Markdown"
+title: "Home"
 output: html_document
 ---
 
@@ -17,17 +17,40 @@ output: html_document
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-# **R Markdown**
+# **Daniel J. Schad**
 
-### *Dynamic Documents for R* {style="padding-top: 0px;"}
+[google scholar](https://scholar.google.com/citations?user=SmoMdbwAAAAJ&hl=de), 
+[researchgate](https://www.researchgate.net/profile/Daniel_Schad), 
+[ORCID](https://orcid.org/0000-0003-2586-6823), 
+[loop](https://loop.frontiersin.org/people/103261/overview)
 
-R Markdown is an authoring format that enables easy creation of dynamic documents, presentations, and reports from R. It combines the core syntax of [markdown](https://daringfireball.net/projects/markdown/) (an easy to write plain text format) with embedded R code chunks that are run so their output can be included in the final document. 
+[Lab website Shravan Vasishth](http://www.ling.uni-potsdam.de/~vasishth/)
 
-R Markdown documents are fully reproducible (they can be automatically regenerated whenever underlying R code or data changes).
 
-R Markdown has many available output formats including [HTML](http://rmarkdown.rstudio.com/html_document_format.html), [PDF](http://rmarkdown.rstudio.com/pdf_document_format.html), [MS Word](http://rmarkdown.rstudio.com/word_document_format.html), [Beamer](http://rmarkdown.rstudio.com/beamer_presentation_format.html), [HTML5 slides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html), [Tufte handouts](http://rmarkdown.rstudio.com/tufte_handout_format.html), [books](https://bookdown.org), [dashboards](http://rmarkdown.rstudio.com/flexdashboard/), and [websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html).
+## *Research Interests* {style="padding-top: 0px;"}
+
+### Reading
+
+- Eye-movement control
+- Zoom-lens of attention and foveal load
+- Mindless reading (i.e., mind wandering during reading)
+- Sentence comprehension
+
+### Computational Psychiatry and Decision-Making
+
+- Model-free and model-based decisions; arbitration based on cognitive abilities
+- Pavlovian conditioning (Human sign- and goal-tracking)
+- Alcohol addiction: Role of model-free and Pavlovian responses
+
+### Methods
+
+- Eye-tracking
+- fMRI
+- Hierarchical models
+- Reinforcement learning (RL) models
+- Dynamical systems models (SWIFT model)
 
 </div>
 <div class="col-sm-6">
 
-![](images/RMarkdownOutputFormats.png)
+![](images/Foto_Daniel.jpg)
