@@ -69,9 +69,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -96,6 +94,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -110,7 +111,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -130,6 +130,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -151,19 +188,85 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -213,27 +316,40 @@ $(document).ready(function () {
 
 
 <p>“+” equal contribution</p>
+<div id="work-in-progress" class="section level2">
+<h2>Work in progress</h2>
+<ul>
+<li><strong>Schad, D.J.</strong>, Rapp, M.A., Dayan, P., Huys, Q.J.M. (in prep). Bayesian model selection and estimation: Simultaneous random effects for models and parameters. <a href="https://github.com/danielschad/simultaneousRandomEffects/blob/master/SchadRappDayanHuys.pdf">Manuscript on github</a></li>
+</ul>
+</div>
 <div id="online-publications-preprints" class="section level2">
 <h2>Online publications (preprints)</h2>
 <ul>
-<li><p><strong>Schad, D.J.</strong> &amp; Vasishth, S. (2019). The posterior probability of a null hypothesis given a statistically significant result. <a href="https://osf.io/9g5bp/" class="uri">https://osf.io/9g5bp/</a>. Shiny app: <a href="https://danielschad.shinyapps.io/probnull" class="uri">https://danielschad.shinyapps.io/probnull</a></p></li>
-<li><p><strong>Schad, D.J.</strong>, Hohenstein, S., Vasishth, S., &amp; Kliegl, R. (2018). <em>How to capitalize on a priori contrasts in linear (mixed) models: A tutorial</em>. arXiv preprint <a href="https://arxiv.org/abs/1807.10451">arXiv:1807.10451</a>.</p></li>
+<li><p><strong>Schad, D.J.</strong>, Betancourt, M. &amp; Vasishth, S. (2018). Towards a principled Bayesian workflow for cognitive science. arXiv preprint <a href="https://arxiv.org/abs/1904.12765">arXiv:1904.12765</a>; <a href="https://osf.io/b2vx9/">https://osf.io/b2vx9/</a></p></li>
+<li><p><strong>Schad, D.J.</strong> &amp; Vasishth, S. (2019). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint <a href="https://arxiv.org/abs/1901.06889">1901.06889</a>; <a href="https://osf.io/9g5bp/">https://osf.io/9g5bp/</a>. Shiny app: <a href="https://danielschad.shinyapps.io/probnull">https://danielschad.shinyapps.io/probnull</a></p></li>
+<li><p><strong>Schad, D.J.</strong>, Hohenstein, S., Vasishth, S., &amp; Kliegl, R. (2018). <em>How to capitalize on a priori contrasts in linear (mixed) models: A tutorial</em>. arXiv preprint <a href="https://arxiv.org/abs/1807.10451">arXiv:1807.10451</a></p></li>
 <li><p>Rabovsky, M., <strong>Schad, D.J.</strong>, Abdel Rahman, R. (2018). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. bioRxiv 509000; doi: <a href="https://doi.org/10.1101/509000">10.1101/509000</a></p></li>
 </ul>
 </div>
 <div id="peer-reviewed-journals" class="section level2">
 <h2>Peer reviewed journals</h2>
 <div id="section" class="section level3">
+<h3>2019</h3>
+<ul>
+<li>Sebold, M., Garbusow, M., Jetzschmann, P., <strong>Schad, D.J.</strong>, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. &amp; Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. <em>Accepted for publication in Psychopharmacology</em>.</li>
+</ul>
+</div>
+<div id="section-1" class="section level3">
 <h3>2018</h3>
 <ul>
-<li><p>Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., <strong>Schad, D.J.</strong>, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., &amp; Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. <a href="https://doi.org/10.1111/adb.12703"><em>Accepted for publication in Addiction Biology</em></a>.</p></li>
+<li><p>Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., <strong>Schad, D.J.</strong>, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., &amp; Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. <em>Addiction Biology</em>, doi: <a href="https://doi.org/10.1111/adb.12703">10.1111/adb.12703</a></p></li>
 <li><p>Obst, E.+, <strong>Schad, D.J.</strong>+, Sommer, C., Nebe, S., Sebold, M., Smolka, M.N., Zimmermann, U.S. (2018). Decisions under alcohol: Alcohol administration shifts choice from habitual towards goal-directed control in adolescent intermediate-risk drinkers. <em>Journal of Psychopharmacology, 0269881118772454</em>, doi: <a href="https://doi.org/10.1177/0269881118772454">10.1177/0269881118772454</a></p></li>
 <li><p><strong>Schad, D.J.</strong>+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., …, Schlagenhauf, F.<em>, Huys, Q.J.M.</em>, Heinz, A.<em>, Rapp, M.A.</em> (2018). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. <em>European Archives of Psychiatry and Clinical Neuroscience, 1-14</em>, doi: <a href="https://doi.org/10.1007/s00406-017-0860-4">10.1007/s00406-017-0860-4</a></p></li>
 <li><p>Nebe, S., Kroemer, N.B., <strong>Schad, D.J.</strong>, Bernhardt, N., Sebold, M., Müller, D.K., …, Huys, Q.J.M., Smolka, M.N. (2018). No association of goal-directed and habitual control with alcohol consumption in young adults. <em>Addiction Biology, 23(1)</em>, 379-393, doi: <a href="https://doi.org/10.1111/adb.12490">10.1111/adb.12490</a></p></li>
 <li><p>Liu, S., Kuschpel, M.S., <strong>Schad, D.J.</strong>, Heinzel, S., Rapp, M. A., &amp; Heinz, A. (2018). Effects of rest on learning processes. <em>European Neuropsychopharmacology, 28</em>, S70, doi: <a href="https://doi.org/10.1016/j.euroneuro.2017.12.099">10.1016/j.euroneuro.2017.12.099</a></p></li>
 </ul>
 </div>
-<div id="section-1" class="section level3">
+<div id="section-2" class="section level3">
 <h3>2017</h3>
 <ul>
 <li><p>Sebold, M., Nebe, S., Garbusow, M., Guggenmos, M., <strong>Schad, D.J.</strong>, Beck, A., … &amp; Zimmermann, U.S. (2017). When habits are dangerous: alcohol expectancies and habitual decision making predict relapse in alcohol dependence. <em>Biological Psychiatry, 82(11)</em>, 847-856, doi: <a href="https://doi.org/10.1016/j.biopsych.2017.04.019">10.1016/j.biopsych.2017.04.019</a></p></li>
@@ -241,7 +357,7 @@ $(document).ready(function () {
 <li><p>Sebold, M., Nebe, S., Garbusow, M., <strong>Schad, D.J.</strong>, Sommer, C., Rapp, M., … &amp; Heinz, A. (2017). Neurobiological correlates of learning and decision-making in alcohol dependence. <em>European Psychiatry, 41</em>, S11, doi: <a href="https://doi.org/10.1016/j.eurpsy.2017.01.084">10.1016/j.eurpsy.2017.01.084</a></p></li>
 </ul>
 </div>
-<div id="section-2" class="section level3">
+<div id="section-3" class="section level3">
 <h3>2016</h3>
 <ul>
 <li><p>Garbusow, M.+, <strong>Schad, D.J.</strong>+, Sebold, M., Friedel, E., Bernhardt, N., Koch, S.P., … &amp; Heinz, A. (2016). Pavlovian‐to‐instrumental transfer effects in the nucleus accumbens relate to relapse in alcohol dependence. <em>Addiction Biology, 21(3)</em>, 719-731, doi: <a href="https://doi.org/10.1111/adb.12243">10.1111/adb.12243</a></p></li>
@@ -250,7 +366,7 @@ $(document).ready(function () {
 <li><p>Liu, S., <strong>Schad D.J.</strong>, Kuschpel, M.S., Rapp, M.A., Heinz, A. (2016). Music and video gaming during breaks: Influence on habitual versus goal-directed decision making. <em>PLoS ONE, 11(3)</em>, e0150165, doi: <a href="https://doi.org/10.1371/journal.pone.0150165">10.1371/journal.pone.0150165</a></p></li>
 </ul>
 </div>
-<div id="section-3" class="section level3">
+<div id="section-4" class="section level3">
 <h3>2015</h3>
 <ul>
 <li><p>Fritsch, V., Da Mota, B., Loth, E., …, <strong>Schad D.J.</strong>, …, Thirion, B., the IMAGEN consortium (2015). Robust regression for large-scale neuroimaging studies. <em>NeuroImage, 111</em>, 431-441, doi: <a href="https://doi.org/10.1016/j.neuroimage.2015.02.048">10.1016/j.neuroimage.2015.02.048</a></p></li>
@@ -259,7 +375,7 @@ $(document).ready(function () {
 <li><p>Liu, S., Kuschpel, M.S., <strong>Schad D.J.</strong>, Heinz, A., Rapp, M.A. (2015). Differential effects of music and video gaming during breaks on auditory and visual learning. <em>Cyberpsychology, Behavior, and Social Networking, 18(11)</em>, 647-653, doi: <a href="https://doi.org/10.1089/cyber.2015.0140">10.1089/cyber.2015.0140</a></p></li>
 </ul>
 </div>
-<div id="section-4" class="section level3">
+<div id="section-5" class="section level3">
 <h3>2014</h3>
 <ul>
 <li><p><strong>Schad, D.J.</strong>+, Jünger, E.+, Garbusow, M., Sebold, M., Bernhardt, N., Javadi, A.H., Zimmermann, U.S., Smolka, M.N., Heinz, A., Rapp, M.A.+, &amp; Huys, Q.J.M.+ (2014). Processing speed enhances model-based over model-free reinforcement learning in the presence of high working memory functioning. <em>Frontiers in Psychology, 5</em>, 1450, doi: <a href="https://doi.org/10.3389/fpsyg.2014.01450">10.3389/fpsyg.2014.01450</a></p></li>
@@ -268,7 +384,7 @@ $(document).ready(function () {
 <li><p><strong>Schad, D.J.</strong>, Risse, S., Slattery, T., Rayner, K. (2014). Word frequency in fast-priming: Evidence for immediate cognitive control of eye movements during reading. <em>Visual Cognition, 22(3)</em>, 390-414, doi: <a href="https://doi.org/10.1080/13506285.2014.89204">10.1080/13506285.2014.89204</a></p></li>
 </ul>
 </div>
-<div id="section-5" class="section level3">
+<div id="section-6" class="section level3">
 <h3>2008-2013</h3>
 <ul>
 <li><p><strong>Schad, D.J.</strong>, Nuthmann, A., &amp; Engbert, R. (2012). Your mind wanders weakly, your mind wanders deeply: Objective measures reveal mindless reading at different levels. <em>Cognition, 125(2)</em>, 179-194, doi: <a href="https://doi.org/10.1016/j.cognition.2012.07.004">10.1016/j.cognition.2012.07.004</a></p></li>
@@ -283,8 +399,8 @@ $(document).ready(function () {
 <div id="further-publications" class="section level2">
 <h2>Further publications</h2>
 <ul>
-<li><p><strong>Schad, D.J.</strong> (2012) <em>Mindless Reading and Eye Movements: Theory, Experiments, and Computational Modeling</em>. Ph.D. Thesis, University of Potsdam, Potsdam, Germany. URL: <a href="http://opus.kobv.de/ubp/volltexte/2014/7082/" class="uri">http://opus.kobv.de/ubp/volltexte/2014/7082/</a></p></li>
-<li><p><strong>Schad, D.J. (2007)</strong> <em>How do implicit and explicit motives differ? The role of non-/verbal stimuli and non-/declarative tasks</em>. Unpublished Diploma Thesis, University of Potsdam, Potsdam, Germany. URL: <a href="http://opus.kobv.de/ubp/volltexte/2014/7139/" class="uri">http://opus.kobv.de/ubp/volltexte/2014/7139/</a></p></li>
+<li><p><strong>Schad, D.J.</strong> (2012) <em>Mindless Reading and Eye Movements: Theory, Experiments, and Computational Modeling</em>. Ph.D. Thesis, University of Potsdam, Potsdam, Germany. URL: <a href="http://opus.kobv.de/ubp/volltexte/2014/7082/">http://opus.kobv.de/ubp/volltexte/2014/7082/</a></p></li>
+<li><p><strong>Schad, D.J. (2007)</strong> <em>How do implicit and explicit motives differ? The role of non-/verbal stimuli and non-/declarative tasks</em>. Unpublished Diploma Thesis, University of Potsdam, Potsdam, Germany. URL: <a href="http://opus.kobv.de/ubp/volltexte/2014/7139/">http://opus.kobv.de/ubp/volltexte/2014/7139/</a></p></li>
 </ul>
 </div>
 
