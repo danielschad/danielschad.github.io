@@ -1,0 +1,98 @@
+---
+title: "Publications"
+output: html_document
+---
+
+"+" equal contribution 
+
+## Work in progress
+
+- **Schad, D.J.**, Rapp, M.A., Dayan, P., Huys, Q.J.M. (in prep). Bayesian model selection and estimation: Simultaneous random effects for models and parameters. [Manuscript on github](https://github.com/danielschad/simultaneousRandomEffects/blob/master/SchadRappDayanHuys.pdf)
+
+## Online publications (preprints)
+
+- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2018). Towards a principled Bayesian workflow for cognitive science. arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
+
+- **Schad, D.J.** & Vasishth, S. (2019). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint [1901.06889](https://arxiv.org/abs/1901.06889); [https://osf.io/9g5bp/](https://osf.io/9g5bp/). Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
+
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2018). *How to capitalize on a priori contrasts in linear (mixed) models: A tutorial*. arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
+
+- Rabovsky, M., **Schad, D.J.**, Abdel Rahman, R. (2018). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. bioRxiv 509000; doi: [10.1101/509000](https://doi.org/10.1101/509000)
+
+
+## Peer reviewed journals
+
+### 2019
+
+- Sebold, M., Garbusow, M., Jetzschmann, P., **Schad, D.J.**, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. & Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. *Accepted for publication in Psychopharmacology*.
+
+### 2018
+
+- Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D.J.**, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., & Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. *Addiction Biology*, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
+
+-	Obst, E.+, **Schad, D.J.**+, Sommer, C., Nebe, S., Sebold, M., Smolka, M.N., Zimmermann, U.S. (2018). Decisions under alcohol: Alcohol administration shifts choice from habitual towards goal-directed control in adolescent intermediate-risk drinkers. *Journal of Psychopharmacology, 0269881118772454*, doi: [10.1177/0269881118772454](https://doi.org/10.1177/0269881118772454)
+
+-	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2018). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 1-14*, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
+
+-	Nebe, S., Kroemer, N.B., **Schad, D.J.**, Bernhardt, N., Sebold, M., Müller, D.K., ..., Huys, Q.J.M., Smolka, M.N. (2018). No association of goal-directed and habitual control with alcohol consumption in young adults. *Addiction Biology, 23(1)*, 379-393, doi: [10.1111/adb.12490](https://doi.org/10.1111/adb.12490)
+
+-	Liu, S., Kuschpel, M.S., **Schad, D.J.**, Heinzel, S., Rapp, M. A., & Heinz, A. (2018). Effects of rest on learning processes. *European Neuropsychopharmacology, 28*, S70, doi: [10.1016/j.euroneuro.2017.12.099](https://doi.org/10.1016/j.euroneuro.2017.12.099)
+
+### 2017
+
+- 	Sebold, M., Nebe, S., Garbusow, M., Guggenmos, M., **Schad, D.J.**, Beck, A., ... & Zimmermann, U.S. (2017). When habits are dangerous: alcohol expectancies and habitual decision making predict relapse in alcohol dependence. *Biological Psychiatry, 82(11)*, 847-856, doi: [10.1016/j.biopsych.2017.04.019](https://doi.org/10.1016/j.biopsych.2017.04.019)
+
+-	Sommer, C., Garbusow, M., Jünger, E., Pooseh, S., Bernhardt, N., Birkenstock, J., **Schad, D.J.**, ... & Zimmermann, U.S. (2017). Strong seduction: impulsivity and the impact of contextual cues on instrumental behavior in alcohol dependence. *Translational Psychiatry, 7(8)*, e1183, doi: [10.1038/tp.2017.158](https://doi.org/10.1038/tp.2017.158)
+
+- Sebold, M., Nebe, S., Garbusow, M., **Schad, D.J.**, Sommer, C., Rapp, M., ... & Heinz, A. (2017). Neurobiological correlates of learning and decision-making in alcohol dependence. *European Psychiatry, 41*, S11, doi: [10.1016/j.eurpsy.2017.01.084](https://doi.org/10.1016/j.eurpsy.2017.01.084)
+
+### 2016
+
+- Garbusow, M.+, **Schad, D.J.**+, Sebold, M., Friedel, E., Bernhardt, N., Koch, S.P., ... & Heinz, A. (2016). Pavlovian‐to‐instrumental transfer effects in the nucleus accumbens relate to relapse in alcohol dependence. *Addiction Biology, 21(3)*, 719-731, doi: [10.1111/adb.12243](https://doi.org/10.1111/adb.12243)
+
+-	Sebold, M., **Schad D.J.**, Nebe, S., Garbusow, M., Jünger, E., Kroemer, N.B., Kathmann, N., Zimmermann, U.S., Smolka, M.N., Rapp, M.A., Heinz, A., Huys, Q.J.M. (2016). Don’t think, just feel the music: Individuals with strong Pavlovian-to-instrumental transfer effects rely less on model-based reinforcement learning. *Journal of Cognitive Neuroscience, 28(7)*, 985-995, doi: [10.1162/jocn_a_00945](https://doi.org/10.1162/jocn_a_00945)
+
+-	Rabovsky, M., **Schad D.J.**, Rahman, R.A. (2016). Language production is facilitated by semantic richness but inhibited by semantic density: Evidence from picture naming. *Cognition, 146*, 240-244, roi: [10.1016/j.cognition.2015.09.016](https://doi.org/10.1016/j.cognition.2015.09.016)
+
+-	Liu, S., **Schad D.J.**, Kuschpel, M.S., Rapp, M.A., Heinz, A. (2016). Music and video gaming during breaks: Influence on habitual versus goal-directed decision making. *PLoS ONE, 11(3)*, e0150165, doi: [10.1371/journal.pone.0150165](https://doi.org/10.1371/journal.pone.0150165)
+
+### 2015
+
+-	Fritsch, V., Da Mota, B., Loth, E., ..., **Schad D.J.**, ..., Thirion, B., the IMAGEN consortium (2015). Robust regression for large-scale neuroimaging studies. *NeuroImage, 111*, 431-441, doi: [10.1016/j.neuroimage.2015.02.048](https://doi.org/10.1016/j.neuroimage.2015.02.048)
+
+-	Sperlich, A, **Schad D.J.**, Laubrock, J. (2015). When preview information starts to matter: development of the perceptual span in German beginning readers. *Journal of Cognitive Psychology, 27(5)*, 511-530, doi: [10.1080/20445911.2014.99399](https://doi.org/10.1080/20445911.2014.99399)
+
+-	Kuschpel, M.S., Liu, S., **Schad D.J.**, Heinzel, S., Heinz, A., Rapp, M.A. (2015). Differential effects of wakeful rest, music and video game playing on working memory performance in the n-back task. *Frontiers in Psychology, 6*, 1683, doi: [10.3389/fpsyg.2015.01683](https://doi.org/10.3389/fpsyg.2015.01683)
+
+-	Liu, S., Kuschpel, M.S., **Schad D.J.**, Heinz, A., Rapp, M.A. (2015). Differential effects of music and video gaming during breaks on auditory and visual learning. *Cyberpsychology, Behavior, and Social Networking, 18(11)*, 647-653, doi: [10.1089/cyber.2015.0140](https://doi.org/10.1089/cyber.2015.0140)
+
+### 2014
+
+-	**Schad, D.J.**+, Jünger, E.+, Garbusow, M., Sebold, M., Bernhardt, N., Javadi, A.H., Zimmermann, U.S., Smolka, M.N., Heinz, A., Rapp, M.A.+, & Huys, Q.J.M.+ (2014). Processing speed enhances model-based over model-free reinforcement learning in the presence of high working memory functioning. *Frontiers in Psychology, 5*, 1450, doi: [10.3389/fpsyg.2014.01450](https://doi.org/10.3389/fpsyg.2014.01450)
+
+-	Garbusow M., **Schad D.J.**, Sommer C., Jünger E., Sebold M., Friedel E., Wendt J., Kathmann N., Schlagenhauf F., Zimmerman U., Heinz A., Huys Q.J.M.+, Rapp M.A.+ (2014). Pavlovian-to-instrumental transfer in alcohol dependence - a pilot study. *Neuropsychobiology, 70(2)*, 111-121, doi: [10.1159/000363507](https://doi.org/10.1159/000363507)
+
+-	Sebold M., Deserno L., Nebe S., **Schad D.J.**, Garbusow M., Hägele C., Keller J., Jünger E., Kathmann N., Smolka M., Rapp M.A., Schlagenhauf F., Heinz A., Huys Q.J.M. (2014). Model-based and model-free decisions in alcohol dependence. *Neuropsychobiology, 70(2)*, 122-131, doi: [10.1159/000362840](https://doi.org/10.1159/000362840)
+
+-	**Schad, D.J.**, Risse, S., Slattery, T., Rayner, K. (2014). Word frequency in fast-priming: Evidence for immediate cognitive control of eye movements during reading. *Visual Cognition, 22(3)*, 390-414, doi: [10.1080/13506285.2014.89204](https://doi.org/10.1080/13506285.2014.89204)
+
+### 2008-2013
+
+-	**Schad, D.J.**, Nuthmann, A., & Engbert, R. (2012). Your mind wanders weakly, your mind wanders deeply: Objective measures reveal mindless reading at different levels. *Cognition, 125(2)*, 179-194, doi: [10.1016/j.cognition.2012.07.004](https://doi.org/10.1016/j.cognition.2012.07.004)
+
+-	**Schad, D.J.**, & Engbert, R. (2012). The zoom lens of attention: Simulating shuffled versus normal text reading using the SWIFT model. *Visual Cognition, 20(4-5, Special Issue on Computational Approaches to Reading and Scene Perception)*, 391, doi: [10.1080/13506285.2012.670143](https://doi.org/10.1080/13506285.2012.670143)
+
+-	**Schad, D.J.**, Nuthmann, A., & Engbert, R. (2010). Eye movements during reading of randomly shuffled text. *Vision Research, 50(23)*, 2600-2616, doi: [10.1016/j.visres.2010.08.005](https://doi.org/10.1016/j.visres.2010.08.005)
+
+-	Inhoff, A., Seymour, B., **Schad, D.J.**, & Greenberg, S. (2010). The size and direction of saccadic curvatures during reading. *Vision Research, 50(12)*, 1117-1130, doi: [10.1016/j.visres.2010.03.025](https://doi.org/10.1016/j.visres.2010.03.025)
+
+-	Schultheiss, O.C., Yankova, D., Dirlikov, B., & **Schad, D.J.** (2009). Are implicit and explicit motive measures statistically independent? A fair and balanced test using the Picture Story Exercise and a cue- and response-matched questionnaire measure. *Journal of Personality Assessment, 91*, 72-81, doi: [10.1080/00223890802484456](https://doi.org/10.1080/00223890802484456)
+
+-	Schultheiss, O.C., Liening, S., & **Schad, D.J.** (2008). The reliability of a Picture Story Exercise measure of implicit motives: Estimates of internal consistency, retest reliability, and ipsative stability. *Journal of Research in Personality, 42*, 1560-1571, doi: [10.1016/j.jrp.2008.07.008](https://doi.org/10.1016/j.jrp.2008.07.008)
+
+## Further publications
+
+-	**Schad, D.J.** (2012) *Mindless Reading and Eye Movements: Theory, Experiments, and Computational Modeling*. Ph.D. Thesis, University of Potsdam, Potsdam, Germany. URL: [http://opus.kobv.de/ubp/volltexte/2014/7082/](http://opus.kobv.de/ubp/volltexte/2014/7082/)
+
+-	**Schad, D.J. (2007)** *How do implicit and explicit motives differ? The role of non-/verbal stimuli and non-/declarative tasks*. Unpublished Diploma Thesis, University of Potsdam, Potsdam, Germany. URL: [http://opus.kobv.de/ubp/volltexte/2014/7139/](http://opus.kobv.de/ubp/volltexte/2014/7139/)
+

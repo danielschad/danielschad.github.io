@@ -1,0 +1,23 @@
+---
+title: "Contact"
+output: html_document
+---
+
+Dr. Dipl.-Psych. Daniel J. Schad
+
+EB Cognitive Science
+
+Golm, House 14, Room 2.14.2.35
+
+University of Potsdam
+
+Karl-Liebknecht-Str. 24/25
+
+14476 Potsdam
+
+Germany
+
+Email: [last-name] [at] uni-potsdam.de
+
+[Lab website Shravan Vasishth](http://www.ling.uni-potsdam.de/~vasishth/)
+

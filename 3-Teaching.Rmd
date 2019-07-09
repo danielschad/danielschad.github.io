@@ -1,0 +1,32 @@
+---
+title: "Teaching"
+output: html_document
+---
+
+- Summer Term 2018: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2018](https://vasishth.github.io/SMLP2018/), Frequentist Track, co-taught with Prof. Dr. R. Kliegl, Dr. A. Bürki, and Prof. Dr. S. Vasishth, University of Potsdam
+
+- Winter Term 2017/18: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
+
+- Summer Term 2017: Scientific working and writing, Seminar, University of Potsdam
+
+- Winter Term 2016/17: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
+
+- Summer Term 2016: Scientific working and writing, Seminar co-taught with Dr. S. Heinzel, University of Potsdam
+
+- Winter Term 2015/16: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
+
+- Oktober 2014: Mixed-effects modeling – Non-linear and random effects for models. R Workshop, Charité – Universitätsmedizin Berlin; selbst entwickelt
+
+- Summer Term 2015: Random and mixed effects in statistical and computational modelling, Graduate Seminar, University of Potsdam
+
+- Oct-Nov 2012: Mathematical models in neurocognitive psychology; Matlab tutorial as part of the lecture on interdisciplinary mathematics, co-taught with Prof. Dr. R. Engbert, University of Potsdam
+
+- Oct 2012: Cognitive and Biological Psychology, Substitution for a session of the lecture by Prof. Dr. F. Rösler, University of Potsdam
+
+- Sept 2009: Introduction to R: Descriptives, Graphics, and General Linear Model, Tutor in the tutorial by Prof. Dr. R. Kliegl, at the International Summer School „Eye Movements and EEG: Experimental Design, Technical Problems, and Statistical Analyses“, Beijing, China
+
+- 2008 + 2010: Long night of sciences, Talks on cognitive psychology and eye movements; Lab tours
+
+- 2010: Schiller High School: Introduction to “Cognitive Psychology and Mindless Reading”, incl. lab tour and supervising student presentations
+
+

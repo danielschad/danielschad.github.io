@@ -1,0 +1,19 @@
+---
+title: "Research Interests"
+output: html_document
+---
+
+My three main interests are in methods, in lower- and higher-level processes in reading, and in computational psychiary / decision-making.
+
+### Methods
+
+A key aspect of linear models is the coding of experimental effects using contrasts. How experimental hypotheses relate to contrasts is often not very transparent. I study a general and very powerful approach for defining contrasts for specific hypotheses using the generalized inverse of the design matrix. I am moreover interested in limitations of frequentist approaches to significance testing, and investigate the posterior probability of the null hypothesis being true after finding a significant effect and how this varies across different contexts. An alternative approach is the use of Bayesian methods, which are increasingly accessible to lay users. I am interested in the steps needed in a robust Bayesian analysis, and how to formalize these in a principled Bayesian workflow.
+
+### Reading
+
+My research focusses on how the eyes move across the text during reading. I study basic questions of controlling attention and eye-movements, and currently start investigating also higher-level syntactic and sentence processing. In particular, I am interested in mindless reading, that is, the experience that during reading our minds wander off the text and to completely different issues. I am interested in how eye-movement control, attention, and higher-level text processing do or do not change during mindless reading. To examine these questions, I use eye-tracking, signal detection analyses of error detection (mindless reading), hierarchical statistical and dynamical systems computational modeling (SWIFT model).
+
+### Computational Psychiatry and Decision-Making
+
+My second main research focus is on learning and decision-making in computational psychiatry. I am interested in basic mechanisms of learning and decision-making, including the arbitration between model-free and model-based instrumental decisions. I also investigate basic processes in Pavlovian conditioning by looking at sign- and goal-tracking in healthy human subjects. Moreover, I apply models of learning and decision-making to understand the processes underlying addiction to alcohol, and test the hypotheses that alcohol dependence reflects model-free or Pavlovian control. To examine these questions, I analyze choice behaviour, eye-tracking, fMRI in combination with computational reinforcement learning (RL) modelling.
+

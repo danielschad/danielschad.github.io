@@ -1,0 +1,62 @@
+---
+title: "Home"
+output: html_document
+---
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-6">
+
+# **Daniel J. Schad**
+
+[Lab Shravan Vasishth](http://www.ling.uni-potsdam.de/~vasishth/)
+
+[Cognitive Sciences](https://www.uni-potsdam.de/en/kognitionswissenschaften/index.html), [University of Potsdam](https://www.uni-potsdam.de), Potsdam, Germany
+
+[Google Scholar](https://scholar.google.com/citations?user=SmoMdbwAAAAJ&hl=de), 
+[Researchgate](https://www.researchgate.net/profile/Daniel_Schad), 
+[Orcid ID](https://orcid.org/0000-0003-2586-6823), 
+[Loop](https://loop.frontiersin.org/people/103261/overview)
+
+## *Research Interests* {style="padding-top: 0px;"}
+
+### Methods
+
+- Eye-tracking
+- fMRI
+- Contrasts in linear models
+- Bayesian properties of p-values
+- Bayesian modeling, Bayesian Workflow
+- Hierarchical models
+- Reinforcement learning (RL) models
+- Dynamical systems models (SWIFT model)
+
+### Computational Psychiatry and Decision-Making
+
+- Model-free and model-based decisions; arbitration based on cognitive abilities
+- Pavlovian conditioning (Human sign- and goal-tracking)
+- Alcohol addiction: Role of model-free and Pavlovian responses
+
+### Reading
+
+- Eye-movement control
+- Zoom-lens of attention and foveal load
+- Mindless reading (i.e., mind wandering during reading)
+- Sentence comprehension
+
+
+
+</div>
+<div class="col-sm-6">
+
+![](images/Foto_Daniel.jpg)
