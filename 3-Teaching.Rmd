@@ -3,6 +3,8 @@ title: "Teaching"
 output: html_document
 ---
 
+- Summer Term 2019: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2019](https://vasishth.github.io/smlp2019/), Beginners and Advanced Frequentist and Bayesian Track, co-taught with Prof. Dr. D. Bates, Dr. A. Bürki, Dr. B. Nicenboim, Prof. Dr. R. Kliegl, and Prof. Dr. S. Vasishth, University of Potsdam
+
 - Summer Term 2018: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2018](https://vasishth.github.io/SMLP2018/), Frequentist Track, co-taught with Prof. Dr. R. Kliegl, Dr. A. Bürki, and Prof. Dr. S. Vasishth, University of Potsdam
 
 - Winter Term 2017/18: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
