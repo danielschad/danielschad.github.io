@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -83,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,18 +244,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -342,7 +330,8 @@ $(document).ready(function () {
 <div id="section" class="section level3">
 <h3>2019</h3>
 <ul>
-<li>Sebold, M., Garbusow, M., Jetzschmann, P., <strong>Schad, D.J.</strong>, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. &amp; Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. <em>Psychopharmacology</em>, doi: <a href="https://doi.org/10.1007/s00213-019-05299-9">10.1007/s00213-019-05299-9</a></li>
+<li><p>Garbusow, M., Nebe, S., Sommer, C., Kuitunen-Paul, S., Sebold, M., <strong>Schad, D. J.</strong>, … &amp; Heinz, A. (2019). Pavlovian-To-Instrumental transfer and alcohol consumption in young male social drinkers: behavioral, neural and polygenic correlates. <em>Journal of Clinical Medicine, 8</em>(8), 1188, doi: <a href="https://doi.org/10.3390/jcm8081188">10.3390/jcm8081188</a></p></li>
+<li><p>Sebold, M., Garbusow, M., Jetzschmann, P., <strong>Schad, D.J.</strong>, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. &amp; Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. <em>Psychopharmacology</em>, doi: <a href="https://doi.org/10.1007/s00213-019-05299-9">10.1007/s00213-019-05299-9</a></p></li>
 </ul>
 </div>
 <div id="section-1" class="section level3">
@@ -427,6 +416,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
