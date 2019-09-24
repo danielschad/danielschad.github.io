@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -83,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -244,18 +244,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -318,7 +306,7 @@ $(document).ready(function () {
 <p>My three main interests are in methods, in lower- and higher-level processes in reading, and in computational psychiary / decision-making.</p>
 <div id="methods" class="section level3">
 <h3>Methods</h3>
-<p>A key aspect of linear models is the coding of experimental effects using contrasts. How experimental hypotheses relate to contrasts is often not very transparent. I study a general and very powerful approach for defining contrasts for specific hypotheses using the generalized inverse of the design matrix. I am moreover interested in limitations of frequentist approaches to significance testing, and investigate the posterior probability of the null hypothesis being true after finding a significant effect and how this varies across different contexts. An alternative approach is the use of Bayesian methods, which are increasingly accessible to lay users. I am interested in the steps needed in a robust Bayesian analysis, and how to formalize these in a principled Bayesian workflow.</p>
+<p>A key aspect of linear models is the coding of experimental effects using contrasts. How experimental hypotheses relate to contrasts is often not very transparent. I study a general and very powerful approach for defining contrasts for specific hypotheses using the generalized inverse of the design matrix, and I’m currently developing the R-package <em>hypr</em> to ease working with the generalized inverse. I am moreover interested in limitations of frequentist approaches to significance testing, and investigate the posterior probability of the null hypothesis being true after finding a significant effect and how this varies across different contexts. An alternative approach is the use of Bayesian methods, which are increasingly accessible to lay users. I am interested in the steps needed in a robust Bayesian analysis, and how to formalize these in a principled Bayesian workflow. In currently ongoing work, I study the validity and variability of Bayes factors.</p>
 </div>
 <div id="reading" class="section level3">
 <h3>Reading</h3>
@@ -326,7 +314,7 @@ $(document).ready(function () {
 </div>
 <div id="computational-psychiatry-and-decision-making" class="section level3">
 <h3>Computational Psychiatry and Decision-Making</h3>
-<p>My second main research focus is on learning and decision-making in computational psychiatry. I am interested in basic mechanisms of learning and decision-making, including the arbitration between model-free and model-based instrumental decisions. I also investigate basic processes in Pavlovian conditioning by looking at sign- and goal-tracking in healthy human subjects. Moreover, I apply models of learning and decision-making to understand the processes underlying addiction to alcohol, and test the hypotheses that alcohol dependence reflects model-free or Pavlovian control. To examine these questions, I analyze choice behaviour, eye-tracking, fMRI in combination with computational reinforcement learning (RL) modelling.</p>
+<p>My second main research focus is on learning and decision-making in computational psychiatry. I am interested in basic mechanisms of learning and decision-making, including the arbitration between model-free and model-based instrumental decisions. I also investigate basic processes in Pavlovian conditioning by studying sign- and goal-tracking in human subjects. Moreover, I apply models of learning and decision-making to understand the processes underlying addiction to alcohol, and test the hypotheses that alcohol dependence reflects model-free or Pavlovian control. To examine these questions, I analyze choice behaviour, eye-tracking, fMRI in combination with computational reinforcement learning (RL) modelling.</p>
 </div>
 
 
@@ -346,6 +334,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
