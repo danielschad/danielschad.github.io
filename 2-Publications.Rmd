@@ -17,15 +17,13 @@ output: html_document
 
 - Rabovsky, M., **Schad, D.J.**, Abdel Rahman, R. (2018). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. bioRxiv 509000; doi: [10.1101/509000](https://doi.org/10.1101/509000)
 
-## Peer reviewed journals - accepted for publication
-
-- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (2019). Dissociating neural learning signals in human sign- and goal-trackers. *Accepted for publication in Nature Human Behavior*.
-
-- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2019). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Accepted for publication in Journal of Memory and Language*, arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
-
 ## Peer reviewed journals
 
 ### 2019
+
+- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (in press). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*.
+
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (in press). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language*, arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
 
 - Garbusow, M., Nebe, S., Sommer, C., Kuitunen-Paul, S., Sebold, M., **Schad, D. J.**, ... & Heinz, A. (2019). Pavlovian-To-Instrumental transfer and alcohol consumption in young male social drinkers: behavioral, neural and polygenic correlates. *Journal of Clinical Medicine, 8*(8), 1188, doi: [10.3390/jcm8081188 ](https://doi.org/10.3390/jcm8081188)
 
