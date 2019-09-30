@@ -21,7 +21,7 @@ output: html_document
 
 - **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2019). Towards a principled Bayesian workflow for cognitive science. *Accepted pending revisions in Psychological Methods*, arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
 
-- Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr: Working with hypotheses, contrasts, and the generalized matrix inverse. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
+- Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr - Hypothesis matrix translation in R. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
 
 - **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (in press). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*.
 
