@@ -19,15 +19,15 @@ output: html_document
 
 ### 2019
 
-- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2018). Towards a principled Bayesian workflow for cognitive science. *Accepted pending revisions in Psychological Methods* (IF = 8.2), arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
+- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2019). Towards a principled Bayesian workflow for cognitive science. *Accepted pending revisions in Psychological Methods*, arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
 
 - Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr: Working with hypotheses, contrasts, and the generalized matrix inverse. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
 
 - **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (in press). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*.
 
-- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (in press). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language* (IF = 3.9), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (in press). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language*, arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
 
-- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One* (IF = 3.2).
+- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One*.
 
 - Garbusow, M., Nebe, S., Sommer, C., Kuitunen-Paul, S., Sebold, M., **Schad, D. J.**, ... & Heinz, A. (2019). Pavlovian-To-Instrumental transfer and alcohol consumption in young male social drinkers: behavioral, neural and polygenic correlates. *Journal of Clinical Medicine, 8*(8), 1188, doi: [10.3390/jcm8081188 ](https://doi.org/10.3390/jcm8081188)
 
