@@ -25,7 +25,7 @@ output: html_document
 
 - **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (in press). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*.
 
-- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (in press). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language*, arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2019). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language*, [https://www.sciencedirect.com/science/article/pii/S0749596X19300695](https://www.sciencedirect.com/science/article/pii/S0749596X19300695), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
 
 - Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One*.
 
