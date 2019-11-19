@@ -17,29 +17,32 @@ output: html_document
 
 ## Peer reviewed journals
 
+### 2020
+
+
 ### 2019
 
 - **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2019). Towards a principled Bayesian workflow for cognitive science. *Accepted pending revisions in Psychological Methods*, arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
 
 - Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr - Hypothesis matrix translation in R. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
 
-- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (in press). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*.
+- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (2019). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*, doi: [10.1038/s41562-019-0765-5](https://doi.org/10.1038/s41562-019-0765-5)
 
-- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2019). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language*, [https://www.sciencedirect.com/science/article/pii/S0749596X19300695](https://www.sciencedirect.com/science/article/pii/S0749596X19300695), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2019). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language, 110*, 104038, doi: [10.1016/j.jml.2019.104038](https://doi.org/10.1016/j.jml.2019.104038), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
 
-- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One*.
+- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One, 14*(10), e0223666, doi: [10.1371/journal.pone.0223666](https://doi.org/10.1371/journal.pone.0223666).
 
 - Garbusow, M., Nebe, S., Sommer, C., Kuitunen-Paul, S., Sebold, M., **Schad, D. J.**, ... & Heinz, A. (2019). Pavlovian-To-Instrumental transfer and alcohol consumption in young male social drinkers: behavioral, neural and polygenic correlates. *Journal of Clinical Medicine, 8*(8), 1188, doi: [10.3390/jcm8081188 ](https://doi.org/10.3390/jcm8081188)
 
-- Sebold, M., Garbusow, M., Jetzschmann, P., **Schad, D.J.**, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. & Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. *Psychopharmacology*, doi: [10.1007/s00213-019-05299-9](https://doi.org/10.1007/s00213-019-05299-9)
+- Sebold, M., Garbusow, M., Jetzschmann, P., **Schad, D.J.**, Nebe, S., Schlagenhauf, F., Heinz, A., Rapp, M. & Romanczuk-Seiferth, N. (2019). Reward and avoidance learning in the context of aversive environments and possible implications for depressive symptoms. *Psychopharmacology, 236*(8), 2437-2449, doi: [10.1007/s00213-019-05299-9](https://doi.org/10.1007/s00213-019-05299-9)
 
 ### 2018
 
-- Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D.J.**, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., & Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. *Addiction Biology*, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
+- Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D.J.**, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., & Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. *Addiction Biology*, 1- 10, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
 
--	Obst, E.+, **Schad, D.J.**+, Sommer, C., Nebe, S., Sebold, M., Smolka, M.N., Zimmermann, U.S. (2018). Decisions under alcohol: Alcohol administration shifts choice from habitual towards goal-directed control in adolescent intermediate-risk drinkers. *Journal of Psychopharmacology, 0269881118772454*, doi: [10.1177/0269881118772454](https://doi.org/10.1177/0269881118772454)
+-	Obst, E.+, **Schad, D.J.**+, Sommer, C., Nebe, S., Sebold, M., Smolka, M.N., Zimmermann, U.S. (2018). Drunk decisions: Alcohol administration shifts choice from habitual towards goal-directed control in adolescent intermediate-risk drinkers. *Journal of Psychopharmacology, 32*(8), 855-866, doi: [10.1177/0269881118772454](https://doi.org/10.1177/0269881118772454)
 
--	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2018). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 1-14*, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
+-	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2018). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 269*(3), 295-308, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
 
 -	Nebe, S., Kroemer, N.B., **Schad, D.J.**, Bernhardt, N., Sebold, M., Müller, D.K., ..., Huys, Q.J.M., Smolka, M.N. (2018). No association of goal-directed and habitual control with alcohol consumption in young adults. *Addiction Biology, 23(1)*, 379-393, doi: [10.1111/adb.12490](https://doi.org/10.1111/adb.12490)
 
