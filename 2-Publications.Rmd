@@ -7,7 +7,7 @@ output: html_document
 
 ## Press
 
-**Schad, D.J.** & Huys, Q.J.M. (2019). Pavlovian sign- and goal-tracking in humans reflects model-free and model-based learning. *Nature Research Behavioural & Social Sciences Community*, [Behind the paper](https://socialsciences.nature.com/channels/1745-behind-the-paper/posts/56798-pavlovian-sign-and-goal-tracking-in-humans-reflects-model-free-and-model-based-learning)
+- **Schad, D.J.** & Huys, Q.J.M. (2019). Pavlovian sign- and goal-tracking in humans reflects model-free and model-based learning. *Nature Research Behavioural & Social Sciences Community*, [Behind the paper](https://socialsciences.nature.com/channels/1745-behind-the-paper/posts/56798-pavlovian-sign-and-goal-tracking-in-humans-reflects-model-free-and-model-based-learning)
 
 ## Work in progress
 
