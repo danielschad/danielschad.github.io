@@ -5,9 +5,15 @@ output: html_document
 
 "+" equal contribution 
 
-## Press
+## Press & online talks
+
+- **Schad, D.J.** (2020). Dissociating neural learning signals in human sign- and goal-trackers. [Talk presented at the Transcontinental Computational Psychiatry Workgroup](https://www.quentinhuys.com/tcpw/events/daniel-schad/).
 
 - **Schad, D.J.** & Huys, Q.J.M. (2019). Pavlovian sign- and goal-tracking in humans reflects model-free and model-based learning. *Nature Research Behavioural & Social Sciences Community*, [Behind the paper](https://socialsciences.nature.com/channels/1745-behind-the-paper/posts/56798-pavlovian-sign-and-goal-tracking-in-humans-reflects-model-free-and-model-based-learning)
+
+- [Report on BrainPost](https://www.brainpost.co/weekly-brainpost/2019/11/26/different-learning-strategies-used-during-pavlovian-conditioning-79hes)
+
+- [Report on SciGlow](https://sciglow.com/health/different-learning-strategies-used-during-pavlovian-conditioning/)
 
 ## Work in progress
 
@@ -17,24 +23,42 @@ output: html_document
 
 - **Schad, D.J.** & Vasishth, S. (2019). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint [1901.06889](https://arxiv.org/abs/1901.06889); [https://osf.io/9g5bp/](https://osf.io/9g5bp/). Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
 
-- Rabovsky, M., **Schad, D.J.**, Abdel Rahman, R. (2018). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. bioRxiv 509000; doi: [10.1101/509000](https://doi.org/10.1101/509000)
-
 ## Peer reviewed journals
+
+### 2021
+
+- **Schad, D.J.**, Nicenboim, B., Bürkner, P.-C., Betancouort, M., & Vasishth, S. (in press). Workflow techniques for the robust use of Bayes factors. *Psychological Methods*, arXiv preprint: [arXiv:2103.08744](https://arxiv.org/abs/2103.08744)
+
+- Vasishth, S., Yadav, H., **Schad, D.J.**, & Nicenboim, B. (in press). Sample size determination for Bayesian hierarchical models commonly used in psycholinguistics.
+*Computational Brain and Behavior*.
+
+- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2021). Towards a principled Bayesian workflow for cognitive science. *Psychological Methods, 26*(1), 103-126, doi: [10.1037/met0000275](https://doi.org/10.1037/met0000275)
+
+- Stone, K., Verissimo, J, **Schad, D.J.**, Oltrogge, E., Vasishth, S. & Lago, S. (2021). The interaction of grammatically distinct agreement dependencies in predictive processing. *Language, Cognition and Neuroscience, 36*(9), 1159-1179, doi: [10.1080/23273798.2021.1921816](https://doi.org/10.1080/23273798.2021.1921816)
+
+- Rabovsky, M., **Schad, D.J.**, & Abdel Rahman, R. (2021). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 146*, 240-244, doi: [10.1016/j.cognition.2015.09.016](https://doi.org/10.1016/j.cognition.2015.09.016) 
+
+- Chen, H., Nebe, S., Mojtahedzadeh, N., Kuitunen-Paul, S., Garbusow, M., **Schad, D. J.**, ... & Smolka, M. N. (2021). Susceptibility to interference between Pavlovian and instrumental control is associated with early hazardous alcohol use. *Addiction Biology, 26*(4), e12983, doi: [10.1111/adb.12983](https://doi.org/10.1111/adb.12983)
 
 ### 2020
 
+- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Nebe, S., Sebold, M., Obst, E., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (2020). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior, 4*, 201-214, doi: [10.1038/s41562-019-0765-5](https://doi.org/10.1038/s41562-019-0765-5), url: [https://rdcu.be/b1RGX](https://rdcu.be/b1RGX)
+
+- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2020). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language, 110*, 104038, doi: [10.1016/j.jml.2019.104038](https://doi.org/10.1016/j.jml.2019.104038), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
+
+- Rabe, M.M., Vasishth, S., Hohenstein, S., Kliegl, R., & **Schad, D.J.** (2020). hypr: An R package for hypothesis-driven contrast coding. *The Journal of Open Source Software*, 2134. doi: [10.21105/joss.02134](https://doi.org/10.21105/joss.02134), [PsyArXiv preprint](https://psyarxiv.com/cqzdx/)
+
+- Stone, K., Lago, S. & *Schad, D.J.* (2020). Divergence point analyses of visual world data: applications to bilingual research. *Bilingualism: Language and Cognition, 24*(5), 1-9, doi: [10.1017/S1366728920000607](https://doi.org/10.1017/S1366728920000607)
+
+- Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D. J.**, Bernhardt, N., ... & Zimmermann, U. (2020). Dysfunctional approach behavior triggered by alcohol‐unrelated Pavlovian cues predicts long‐term relapse in alcohol dependence. *Addiction Biology, 25*(1), e12703, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
 
 ### 2019
 
-- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2019). Towards a principled Bayesian workflow for cognitive science. *Accepted pending revisions in Psychological Methods*, arXiv preprint [arXiv:1904.12765](https://arxiv.org/abs/1904.12765); [https://osf.io/b2vx9/](https://osf.io/b2vx9/)
-
 - Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr - Hypothesis matrix translation in R. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
 
-- **Schad, D.J.**, Rapp, M.A., Garbusow, M., Sebold, M., Nebe, S., Kroemer, N., ..., Heinz, A., Dayan, P., & Huys, Q.J.M. (2019). Dissociating neural learning signals in human sign- and goal-trackers. *Nature Human Behavior*, doi: [10.1038/s41562-019-0765-5](https://doi.org/10.1038/s41562-019-0765-5)
+-	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2019). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 269*(3), 295-308, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
 
-- **Schad, D.J.**, Hohenstein, S., Vasishth, S., & Kliegl, R. (2019). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language, 110*, 104038, doi: [10.1016/j.jml.2019.104038](https://doi.org/10.1016/j.jml.2019.104038), arXiv preprint [arXiv:1807.10451](https://arxiv.org/abs/1807.10451)
-
-- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (in press). Short-term effects of video gaming on brain response during working memory performance. *PLoS One, 14*(10), e0223666, doi: [10.1371/journal.pone.0223666](https://doi.org/10.1371/journal.pone.0223666).
+- Liu, S., Kaufmann, C., Labadie, C., Ströhle, A., Kuschpel, M.S., Garbusow, M., Hummel, R., **Schad, D.J.**, Rapp, M.A., Heinz, A., & Heinzel, S. (2019). Short-term effects of video gaming on brain response during working memory performance. *PLoS One, 14*(10), e0223666, doi: [10.1371/journal.pone.0223666](https://doi.org/10.1371/journal.pone.0223666).
 
 - Garbusow, M., Nebe, S., Sommer, C., Kuitunen-Paul, S., Sebold, M., **Schad, D. J.**, ... & Heinz, A. (2019). Pavlovian-To-Instrumental transfer and alcohol consumption in young male social drinkers: behavioral, neural and polygenic correlates. *Journal of Clinical Medicine, 8*(8), 1188, doi: [10.3390/jcm8081188 ](https://doi.org/10.3390/jcm8081188)
 
@@ -42,11 +66,7 @@ output: html_document
 
 ### 2018
 
-- Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D.J.**, Bernhardt, N., Huys, Q.J.M., Wurst, F., Weinmann, W., Heinz, A., Smolka, M., & Zimmermann, U. (2018). Dysfunctional approach behavior triggered by alcohol-unrelated Pavlovian cues predicts long-term relapse in alcohol dependence. *Addiction Biology*, 1- 10, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
-
 -	Obst, E.+, **Schad, D.J.**+, Sommer, C., Nebe, S., Sebold, M., Smolka, M.N., Zimmermann, U.S. (2018). Drunk decisions: Alcohol administration shifts choice from habitual towards goal-directed control in adolescent intermediate-risk drinkers. *Journal of Psychopharmacology, 32*(8), 855-866, doi: [10.1177/0269881118772454](https://doi.org/10.1177/0269881118772454)
-
--	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2018). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 269*(3), 295-308, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
 
 -	Nebe, S., Kroemer, N.B., **Schad, D.J.**, Bernhardt, N., Sebold, M., Müller, D.K., ..., Huys, Q.J.M., Smolka, M.N. (2018). No association of goal-directed and habitual control with alcohol consumption in young adults. *Addiction Biology, 23(1)*, 379-393, doi: [10.1111/adb.12490](https://doi.org/10.1111/adb.12490)
 

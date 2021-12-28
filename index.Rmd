@@ -19,16 +19,15 @@ output: html_document
 
 # **Daniel J. Schad**
 
-[Lab Shravan Vasishth](http://www.ling.uni-potsdam.de/~vasishth/)
-
-[Cognitive Sciences](https://www.uni-potsdam.de/en/kognitionswissenschaften/index.html), [University of Potsdam](https://www.uni-potsdam.de), Potsdam, Germany
+Psychology Department, [Health and Medical University](https://www.health-and-medical-university.de), Potsdam, Germany
 
 [Google Scholar](https://scholar.google.com/citations?user=SmoMdbwAAAAJ&hl=de), 
 [Researchgate](https://www.researchgate.net/profile/Daniel_Schad), 
 [Orcid ID](https://orcid.org/0000-0003-2586-6823), 
 [Loop](https://loop.frontiersin.org/people/103261/overview)
 
-## *Research Interests* {style="padding-top: 0px;"}
+
+# *Research Interests*
 
 ### Methods
 
@@ -36,8 +35,8 @@ output: html_document
 - fMRI
 - Contrasts in linear models
 - Bayesian properties of p-values
-- Bayesian modeling, Bayesian Workflow
-- Hierarchical models
+- Bayesian modeling, Bayesian Workflow, Bayes factors, Data aggregation
+- Statistical and computational hierarchical models
 - Reinforcement learning (RL) models
 - Dynamical systems models (SWIFT model)
 
