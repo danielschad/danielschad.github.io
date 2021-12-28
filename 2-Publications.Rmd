@@ -30,7 +30,7 @@ output: html_document
 - **Schad, D.J.**, Nicenboim, B., Bürkner, P.-C., Betancouort, M., & Vasishth, S. (in press). Workflow techniques for the robust use of Bayes factors. *Psychological Methods*, arXiv preprint: [arXiv:2103.08744](https://arxiv.org/abs/2103.08744)
 
 - Vasishth, S., Yadav, H., **Schad, D.J.**, & Nicenboim, B. (in press). Sample size determination for Bayesian hierarchical models commonly used in psycholinguistics.
-*Computational Brain and Behavior*.
+*Computational Brain and Behavior*, PsyArXiv preprint: [PsyArXiv:u8yvc](https://psyarxiv.com/u8yvc)
 
 - **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2021). Towards a principled Bayesian workflow for cognitive science. *Psychological Methods, 26*(1), 103-126, doi: [10.1037/met0000275](https://doi.org/10.1037/met0000275)
 
