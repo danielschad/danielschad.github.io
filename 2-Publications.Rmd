@@ -15,28 +15,42 @@ output: html_document
 
 - [Report on SciGlow](https://sciglow.com/health/different-learning-strategies-used-during-pavlovian-conditioning/)
 
-## Work in progress
+## Books (in progress)
+
+- Nicenboim, B., **Schad, D.J.** & Vasishth, S. (in prep). An introduction to Bayesian data analysis for cognitive science. CRC Press. [https://vasishth.github.io/bayescogsci/book/](https://vasishth.github.io/bayescogsci/book/)
+
+- Vasishth, S., **Schad, D.J.**, Bürki, A., & Kliegl, R. (in prep). Linear mixed models for linguistics and psychology: A comprehensive introduction. CRC Press. [https://vasishth.github.io/Freq_CogSci/](https://vasishth.github.io/Freq_CogSci/)
+
+## Preprints (in progress)
 
 - **Schad, D.J.**, Rapp, M.A., Dayan, P., Huys, Q.J.M. (in prep). Bayesian model selection and estimation: Simultaneous random effects for models and parameters. [Manuscript on github](https://github.com/danielschad/simultaneousRandomEffects/blob/master/SchadRappDayanHuys.pdf)
 
-## Online publications (preprints)
+## Software
 
-- **Schad, D.J.** & Vasishth, S. (2019). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint [1901.06889](https://arxiv.org/abs/1901.06889); [https://osf.io/9g5bp/](https://osf.io/9g5bp/). Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
+- Rabe, M., Kliegl, R. & **Schad, D.J.** (2020). designr: Balanced factorial designs. *R package version 0.1.12*, [https://cran.r-project.org/web/packages/designr/index.html](https://cran.r-project.org/web/packages/designr/index.html)
+
+- Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2020). hypr - Hypothesis matrix translation in R. *R package version 0.2.2*, [https://cran.r-project.org/web/packages/hypr/index.html](https://cran.r-project.org/web/packages/hypr/index.html)
 
 ## Peer reviewed journals
 
+### 2022
+
+- **Schad, D.J.** & Vasishth, S. (in press). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint [1901.06889](https://arxiv.org/abs/1901.06889); [https://osf.io/9g5bp/](https://osf.io/9g5bp/), doi: [10.48550/arXiv.1901.06889](https://doi.org/10.48550/arXiv.1901.06889), Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
+
+- **Schad, D.J.**, Nicenboim, B., Bürkner, P.-C., Betancouort, M., & Vasishth, S. (2022). Workflow techniques for the robust use of Bayes factors. *Psychological Methods*, doi: [10.1037/met0000472](https://doi.org/10.1037/met0000472), arXiv preprint: [arXiv:2103.08744](https://arxiv.org/abs/2103.08744)
+
+- Vasishth, S., Yadav, H., **Schad, D.J.**, & Nicenboim, B. (2022). Sample size determination for Bayesian hierarchical models commonly used in psycholinguistics.
+*Computational Brain and Behavior*, doi: [10.1007/s42113-021-00125-y](https://doi.org/10.1007/s42113-021-00125-y), PsyArXiv preprint: [PsyArXiv:u8yvc](https://psyarxiv.com/u8yvc)
+
+- Magrabi, A., Beck, A., **Schad, D.J.**, Lett, T.A., Stoppel, C.M., Charlet, K., Kiefer, F., Heinz, A., & Walter, H. (2022). Alcohol dependence decreases functional activation of the caudate nucleus during model‐based decision processes. *Alcoholism: Clinical and Experimental Research*, doi: [http://doi.org/10.1111/acer.14812 ](10.1111/acer.14812 )
+
 ### 2021
 
-- **Schad, D.J.**, Nicenboim, B., Bürkner, P.-C., Betancouort, M., & Vasishth, S. (in press). Workflow techniques for the robust use of Bayes factors. *Psychological Methods*, arXiv preprint: [arXiv:2103.08744](https://arxiv.org/abs/2103.08744)
-
-- Vasishth, S., Yadav, H., **Schad, D.J.**, & Nicenboim, B. (in press). Sample size determination for Bayesian hierarchical models commonly used in psycholinguistics.
-*Computational Brain and Behavior*, PsyArXiv preprint: [PsyArXiv:u8yvc](https://psyarxiv.com/u8yvc)
-
-- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2021). Towards a principled Bayesian workflow for cognitive science. *Psychological Methods, 26*(1), 103-126, doi: [10.1037/met0000275](https://doi.org/10.1037/met0000275)
+- **Schad, D.J.**, Betancourt, M. & Vasishth, S. (2021). Towards a principled Bayesian workflow for cognitive science. *Psychological Methods, 26*(1), 103-126, doi: [10.1037/met0000275](https://doi.org/10.1037/met0000275), arXiv preprint: [arXiv:1904.12765v1](https://arxiv.org/abs/1904.12765v1)
 
 - Stone, K., Verissimo, J, **Schad, D.J.**, Oltrogge, E., Vasishth, S. & Lago, S. (2021). The interaction of grammatically distinct agreement dependencies in predictive processing. *Language, Cognition and Neuroscience, 36*(9), 1159-1179, doi: [10.1080/23273798.2021.1921816](https://doi.org/10.1080/23273798.2021.1921816)
 
-- Rabovsky, M., **Schad, D.J.**, & Abdel Rahman, R. (2021). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 146*, 240-244, doi: [10.1016/j.cognition.2015.09.016](https://doi.org/10.1016/j.cognition.2015.09.016) 
+- Rabovsky, M., **Schad, D.J.**, & Abdel Rahman, R. (2021). Object naming is facilitated by semantic richness but inhibited by semantic density: Electrophysiological and behavioral evidence. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 146*, 240-244, doi: [10.1016/j.cognition.2015.09.016](https://doi.org/10.1016/j.cognition.2015.09.016), bioRxiv preprint: [10.1101/509000](https://doi.org/10.1101/509000)
 
 - Chen, H., Nebe, S., Mojtahedzadeh, N., Kuitunen-Paul, S., Garbusow, M., **Schad, D. J.**, ... & Smolka, M. N. (2021). Susceptibility to interference between Pavlovian and instrumental control is associated with early hazardous alcohol use. *Addiction Biology, 26*(4), e12983, doi: [10.1111/adb.12983](https://doi.org/10.1111/adb.12983)
 
@@ -53,8 +67,6 @@ output: html_document
 - Sommer, C., Birkenstock, J., Garbusow, M., Obst, E., **Schad, D. J.**, Bernhardt, N., ... & Zimmermann, U. (2020). Dysfunctional approach behavior triggered by alcohol‐unrelated Pavlovian cues predicts long‐term relapse in alcohol dependence. *Addiction Biology, 25*(1), e12703, doi: [10.1111/adb.12703](https://doi.org/10.1111/adb.12703)
 
 ### 2019
-
-- Rabe, M., Hohenstein, S., Vasishth, S., Kliegl, R. & **Schad, D.J.** (2019). hypr - Hypothesis matrix translation in R. *R package version 0.1.1*,  [https://github.com/mmrabe/hypr](https://github.com/mmrabe/hypr)
 
 -	**Schad, D.J.**+, Garbusow, M.+, Friedel, E., Sommer, C., Sebold, M., Hägele, C., ..., Schlagenhauf, F.*, Huys, Q.J.M.*, Heinz, A.*, Rapp, M.A.* (2019). Neural correlates of instrumental responding in the context of alcohol-related cues index disorder severity and relapse risk. *European Archives of Psychiatry and Clinical Neuroscience, 269*(3), 295-308, doi: [10.1007/s00406-017-0860-4](https://doi.org/10.1007/s00406-017-0860-4)
 
