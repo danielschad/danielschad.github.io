@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Workshop: Sign- and goal-tracking (Potsdam, 20–22 November 2026)</title>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!-- Included in the <head> of workshopSTGT.html (see its YAML header). Controls link previews when the page is shared. -->
+<meta name="description" content="International workshop in Potsdam, Germany, 20–22 November 2026, bringing together human, computational and rodent research on sign- and goal-tracking. Poster session open to all career stages. Please reply by 18 October 2026." />
+<link rel="canonical" href="https://danielschad.github.io/workshopSTGT.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Daniel J. Schad" />
+<meta property="og:title" content="Sign- and goal-tracking: Human data, computational models, and rodent foundations" />
+<meta property="og:description" content="International workshop in Potsdam, Germany, 20–22 November 2026. Poster session open to all career stages. Please reply by 18 October 2026." />
+<meta property="og:url" content="https://danielschad.github.io/workshopSTGT.html" />
+<meta property="og:image" content="https://danielschad.github.io/images/workshopSTGT-share.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Workshop on sign- and goal-tracking, Potsdam, 20–22 November 2026" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Daniel J. Schad</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="5-Team.html">Team</a>
+</li>
+<li>
+  <a href="1-Research.html">Research</a>
+</li>
+<li>
+  <a href="2-Publications.html">Publications</a>
+</li>
+<li>
+  <a href="3-Teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="4-Contact.html">Contact</a>
+</li>
+<li>
+  <a href="6-Jobs.html">Jobs</a>
+</li>
+<li>
+  <a href="workshopSTGT.html">Workshop</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+
+
+<!-- Workshop page. Link-preview tags (title, description, share image) are in _workshopSTGT_head.html -->
+<style type="text/css">
+/* ---------- Workshop page ---------- */
+.stgt-hero { padding-top: 24px; }
+.stgt-title {
+  font-size: 46px; line-height: 1.08; font-weight: 500;
+  letter-spacing: -0.015em; color: #222; margin: 0 0 18px;
+  text-wrap: balance;
+}
+.stgt-subtitle {
+  display: block; margin-top: 12px;
+  font-size: 23px; line-height: 1.3; font-weight: 300; letter-spacing: 0; color: #555;
+  text-wrap: balance;
+}
+.stgt-nowrap { white-space: nowrap; }
+.stgt-lead { font-size: 17px; line-height: 1.5; color: #333; margin: 0 0 22px; }
+.stgt-lead strong { color: #222; }
+.stgt-actions { position: relative; margin: 0; }
+.stgt-actions .btn { margin: 0 8px 10px 0; }
+
+.stgt-facts { margin: 30px 0 6px; }
+.stgt-facts dl {
+  display: grid; grid-template-columns: 10.5em minmax(0, 1fr);
+  margin: 0; border-bottom: 1px solid #e3e3e3; font-size: 15px;
+}
+.stgt-facts dt, .stgt-facts dd { margin: 0; padding: 10px 0; border-top: 1px solid #e3e3e3; line-height: 1.5; }
+.stgt-facts dt { font-weight: 400; color: #666; padding-right: 16px; }
+.stgt-facts dd { color: #333; }
+
+/* Section headings: normal spacing, and anchor links stop below the fixed menu bar */
+.main-container .section { scroll-margin-top: 72px; }
+.main-container .section h2 { font-size: 26px; margin-top: 44px; margin-bottom: 12px; padding-top: 0; }
+.main-container .section h3 { font-size: 19px; margin-top: 26px; margin-bottom: 8px; padding-top: 0; }
+.main-container .section p { font-size: 15px; line-height: 1.6; max-width: 36em; }
+.main-container .section p > .btn { position: relative; margin-top: 4px; }
+
+.stgt-names ul { columns: 3 9.5em; column-gap: 24px; max-width: 540px; list-style: none; padding: 0; margin: 4px 0 14px; font-size: 16px; }
+.stgt-names li { padding: 3px 0; break-inside: avoid; }
+
+.stgt-share { position: relative; max-width: 540px; margin-top: 6px; }
+.stgt-share .form-control { height: auto; padding: 8px 10px; font-size: 15px; background-color: #fff; }
+.stgt-share-buttons { margin-top: 10px; }
+.stgt-share-buttons .btn { margin: 0 8px 8px 0; }
+.stgt-share-status { display: inline-block; color: #3c763d; }
+
+/* Figure: two gaze paths, one to the cue (sign-tracking), one to the reward location (goal-tracking) */
+.stgt-figure { display: block; width: 100%; max-width: 340px; height: auto; margin: 4px auto 0; }
+.stgt-cue { fill: #fbf1e8; stroke: #a35200; stroke-width: 2; }
+.stgt-reward { fill: #eaf2f9; stroke: #337ab7; stroke-width: 2; }
+.stgt-fix { fill: none; stroke: #8a8a8a; stroke-width: 2; stroke-linecap: round; }
+.stgt-path polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; animation: stgt-fade .8s ease-out .15s both; }
+.stgt-path circle { stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: stgt-pop .35s ease-out both; }
+.stgt-st polyline, .stgt-st circle { stroke: #a35200; }
+.stgt-st circle { fill: rgba(163, 82, 0, .16); }
+.stgt-gt polyline, .stgt-gt circle { stroke: #337ab7; }
+.stgt-gt polyline { stroke-dasharray: 4 3; }
+.stgt-gt circle { fill: rgba(51, 122, 183, .16); }
+.stgt-fig-label { font-size: 14px; fill: #666; text-anchor: middle; }
+.stgt-fig-key { font-size: 14px; font-weight: 700; }
+.stgt-fig-key.st { fill: #a35200; }
+.stgt-fig-key.gt { fill: #337ab7; }
+@keyframes stgt-pop { from { opacity: 0; transform: scale(.3); } to { opacity: 1; transform: scale(1); } }
+@keyframes stgt-fade { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .stgt-path polyline, .stgt-path circle { animation: none; }
+}
+
+@media (max-width: 767px) {
+  .stgt-hero { padding-top: 6px; }
+  .stgt-title { font-size: 34px; }
+  .stgt-subtitle { font-size: 20px; }
+  .stgt-figure { max-width: 260px; margin-top: 10px; }
+}
+@media (max-width: 599px) {
+  .stgt-facts dl { grid-template-columns: minmax(0, 1fr); }
+  .stgt-facts dt { padding-bottom: 0; }
+  .stgt-facts dd { border-top: 0; padding-top: 2px; }
+}
+</style>
+
+<div class="row stgt-hero">
+<div class="col-sm-7">
+<h1 class="stgt-title">Sign- and <span class="stgt-nowrap">goal-tracking</span><span class="sr-only">:</span>
+<span class="stgt-subtitle">Human data, computational models, and rodent foundations</span></h1>
+<p class="stgt-lead">An international workshop in Potsdam, Germany<br>
+<strong>20–22&nbsp;November&nbsp;2026</strong></p>
+<p class="stgt-actions">
+<a class="btn btn-primary btn-lg" href="mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&amp;body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A">Register by email</a>
+<a class="btn btn-default btn-lg" href="#share">Share this page</a>
+</p>
+</div>
+<div class="col-sm-5">
+<svg class="stgt-figure" viewBox="0 0 320 256" role="img" aria-labelledby="stgt-fig-title stgt-fig-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="stgt-fig-title">Sign-tracking and goal-tracking</title>
+<desc id="stgt-fig-desc">Two gaze paths start at a central fixation point. One moves to the cue and dwells there (sign-tracking); the other moves to the location where the reward will appear (goal-tracking).</desc>
+<rect class="stgt-cue" x="40" y="36" width="64" height="64" rx="6"/>
+<text class="stgt-fig-label" x="72" y="124">cue</text>
+<circle class="stgt-reward" cx="248" cy="68" r="32"/>
+<text class="stgt-fig-label" x="248" y="124">reward</text>
+<path class="stgt-fix" d="M160 199 v16 M152 207 h16"/>
+<g class="stgt-path stgt-st">
+<polyline points="160,207 139,180 114,146 86,94 70,66 80,55"/>
+<circle cx="139" cy="180" r="3.5" style="animation-delay:.35s"/>
+<circle cx="114" cy="146" r="5" style="animation-delay:.55s"/>
+<circle cx="86" cy="94" r="7.5" style="animation-delay:.75s"/>
+<circle cx="70" cy="66" r="11" style="animation-delay:.95s"/>
+<circle cx="80" cy="55" r="8" style="animation-delay:1.15s"/>
+</g>
+<g class="stgt-path stgt-gt">
+<polyline points="160,207 181,180 206,146 234,94 250,66 240,55"/>
+<circle cx="181" cy="180" r="3.5" style="animation-delay:.35s"/>
+<circle cx="206" cy="146" r="5" style="animation-delay:.55s"/>
+<circle cx="234" cy="94" r="7.5" style="animation-delay:.75s"/>
+<circle cx="250" cy="66" r="11" style="animation-delay:.95s"/>
+<circle cx="240" cy="55" r="8" style="animation-delay:1.15s"/>
+</g>
+<text class="stgt-fig-key st" x="146" y="246" text-anchor="end">sign-tracking</text>
+<text class="stgt-fig-key gt" x="174" y="246">goal-tracking</text>
+</svg>
+</div>
+</div>
+<div class="stgt-facts">
+<dl>
+<dt>Dates</dt>
+<dd>
+Friday 20 to Sunday 22 November 2026
+</dd>
+<dt>Location</dt>
+<dd>
+Potsdam, Germany, close to the <a
+href="https://www.kongresshotel-potsdam.com/">Kongresshotel Potsdam</a>
+</dd>
+<dt>Reply by</dt>
+<dd>
+Sunday 18 October 2026
+</dd>
+<dt>Participation fee</dt>
+<dd>
+€70, covering some food and drinks
+</dd>
+<dt>Posters</dt>
+<dd>
+Welcome from researchers at all career stages
+</dd>
+<dt>Contact</dt>
+<dd>
+<a
+href="mailto:stgtworkshop.potsdam@gmail.com">stgtworkshop.potsdam@gmail.com</a>
+</dd>
+</dl>
+</div>
+<div id="about-the-workshop" class="section level2">
+<h2>About the workshop</h2>
+<p>Research on individual differences in Pavlovian conditioned approach
+has developed rapidly across several partly overlapping areas: animal
+work on the neural and neurochemical mechanisms underlying sign- and
+goal-tracking, computational accounts of why identical cue–reward
+contingencies can produce different conditioned responses across
+individuals, and a growing body of human research using measures such as
+eye-tracking, physical approach tasks, and neural response to cues and
+rewards.</p>
+<p>Although these approaches increasingly inform one another,
+researchers working with the different paradigms and levels of analysis
+do not often have the opportunity to meet in the same setting. The aim
+of this workshop is therefore to bring together researchers across these
+areas and to create space for detailed discussion of how sign-tracking
+and goal-tracking are currently conceptualised, measured, and
+modelled.</p>
+<p>A central aim of the meeting will be to compare the different
+approaches currently used across the field. Lever autoshaping,
+gaze-based measures, neural measures, physical approach tasks, and
+formal computational models each capture somewhat different aspects of
+the phenotype and rely on different assumptions about what sign- and
+goal-tracking represent and predict. By discussing these approaches
+alongside one another, we hope to develop a clearer shared picture of
+where the different lines of work converge, where they differ, and which
+open questions may be particularly important for future research.</p>
+<p>The sessions are intended to emphasise discussion and exchange, with
+time to explain not only findings but also the practical and
+methodological details of how the work is carried out.</p>
+</div>
+<div id="speakers-and-contributors" class="section level2">
+<h2>Speakers and contributors</h2>
+<p>Speakers and contributors currently include (in alphabetical
+order):</p>
+<div class="stgt-names">
+<ul>
+<li>Patrick Anselme</li>
+<li>François Cinotti</li>
+<li>Shelly Flagel</li>
+<li>Sara Garofalo</li>
+<li>Michelle Heck</li>
+<li>Robert Honey</li>
+<li>Jonathan Morrow</li>
+<li>Martin Paulus</li>
+<li>Terry Robinson</li>
+<li>Nicola Sambuco</li>
+<li>Benjamin Saunders</li>
+<li>Francesco Versace</li>
+</ul>
+</div>
+<p>Ralf Engbert and Daniel J. Schad facilitate the workshop, and further
+contributors will join the programme.</p>
+</div>
+<div id="taking-part" class="section level2">
+<h2>Taking part</h2>
+<p>Please let us know <strong>by Sunday 18 October 2026</strong> whether
+you are interested and able to attend, by email to <a
+href="mailto:stgtworkshop.potsdam@gmail.com">stgtworkshop.potsdam@gmail.com</a>.
+We are happy to provide further details on the programme, venue, and
+accommodation.</p>
+<p>Participation is €70, which covers some food and drinks.</p>
+<p><a
+href="mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&amp;body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A"
+class="btn btn-primary">Register by email</a></p>
+<div id="presenting-a-poster" class="section level3">
+<h3>Presenting a poster</h3>
+<p>A poster session open to researchers at all career stages will run
+alongside the workshop, and participants are warmly encouraged to
+present relevant work. If you would like to present a poster, please
+send us a title and an abstract of your work with your email.</p>
+</div>
+</div>
+<div id="venue-and-accommodation" class="section level2">
+<h2>Venue and accommodation</h2>
+<p>The workshop takes place in Potsdam, close to the <a
+href="https://www.kongresshotel-potsdam.com/">Kongresshotel Potsdam</a>.
+Potsdam borders Berlin to the south-west, and the nearest airport is
+Berlin Brandenburg (BER). Details on the venue and on accommodation are
+available on request.</p>
+</div>
+<div id="share" class="section level2">
+<h2>Share this page</h2>
+<p>We would be very happy if you shared this invitation with colleagues,
+students, or other members of your group who may be interested in
+attending.</p>
+<div class="stgt-share">
+<label class="sr-only" for="stgt-url">Link to this page</label>
+<input class="form-control" id="stgt-url" type="text" value="https://danielschad.github.io/workshopSTGT.html" readonly>
+<div class="stgt-share-buttons">
+<button class="btn btn-default" id="stgt-share-button" type="button">Copy link</button>
+<a class="btn btn-default" href="mailto:?subject=Workshop%20on%20sign-%20and%20goal-tracking%2C%20Potsdam%2C%2020%E2%80%9322%20November%202026&amp;body=You%20may%20be%20interested%20in%20this%20workshop%3A%0D%0A%0D%0ASign-%20and%20goal-tracking%3A%20Human%20data%2C%20computational%20models%2C%20and%20rodent%20foundations%0D%0APotsdam%2C%20Germany%2C%2020%E2%80%9322%20November%202026%0D%0A%0D%0Ahttps%3A%2F%2Fdanielschad.github.io%2FworkshopSTGT.html%0D%0A">Email to a colleague</a>
+<span class="stgt-share-status" id="stgt-share-status" role="status" aria-live="polite"></span>
+</div>
+</div>
+<script>
+(function () {
+  var url = "https://danielschad.github.io/workshopSTGT.html";
+  var title = "Workshop: Sign- and goal-tracking (Potsdam, 20–22 November 2026)";
+  var button = document.getElementById("stgt-share-button");
+  var field = document.getElementById("stgt-url");
+  var status = document.getElementById("stgt-share-status");
+  if (!button || !field || !status) return;
+  var timer;
+  function say(message) {
+    status.textContent = message;
+    clearTimeout(timer);
+    timer = setTimeout(function () { status.textContent = ""; }, 4000);
+  }
+  function copyBySelection() {
+    field.focus();
+    field.select();
+    var copied = false;
+    try { copied = document.execCommand("copy"); } catch (e) {}
+    say(copied ? "Link copied" : "Select the link above to copy it");
+  }
+  // Phones and tablets: open the system share sheet. Elsewhere: copy the link.
+  var canShare = typeof navigator.share === "function" && window.matchMedia("(pointer: coarse)").matches;
+  button.textContent = canShare ? "Share link" : "Copy link";
+  button.addEventListener("click", function () {
+    if (canShare) {
+      navigator.share({ title: title, url: url }).catch(function () {});
+    } else if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(function () { say("Link copied"); }, copyBySelection);
+    } else {
+      copyBySelection();
+    }
+  });
+  field.addEventListener("focus", function () { field.select(); });
+})();
+</script>
+</div>
+<div id="organiser-and-contact" class="section level2">
+<h2>Organiser and contact</h2>
+<p>Prof. Dr. Daniel J. Schad<br />
+Professor for Quantitative Methods<br />
+Institute for Mind, Brain &amp; Behavior<br />
+HMU Health and Medical University, Potsdam, Germany</p>
+<p>Workshop email: <a
+href="mailto:stgtworkshop.potsdam@gmail.com">stgtworkshop.potsdam@gmail.com</a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

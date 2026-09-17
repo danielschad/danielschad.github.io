@@ -16,3 +16,8 @@ navbar:
       href: 4-Contact.html
     - text: "Jobs"
       href: 6-Jobs.html
+    - text: "Workshop"
+      href: workshopSTGT.html
+output:
+  html_document:
+    css: styles.css

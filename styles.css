@@ -1,0 +1,9 @@
+/* Site-wide styles, added to every page via _site.yml (output: html_document: css). */
+
+/* Keep all menu items on one row on tablets (768-991 px wide). */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav > li > a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
