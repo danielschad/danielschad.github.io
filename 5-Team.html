@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title> Team</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Daniel J. Schad</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="5-Team.html">Team</a>
+</li>
+<li>
+  <a href="1-Research.html">Research</a>
+</li>
+<li>
+  <a href="2-Publications.html">Publications</a>
+</li>
+<li>
+  <a href="3-Teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="4-Contact.html">Contact</a>
+</li>
+<li>
+  <a href="6-Jobs.html">Jobs</a>
+</li>
+<li>
+  <a href="workshopSTGT.html">Workshop</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><br>Team</h1>
+
+</div>
+
+
+<div id="daniel-j.-schad-principal-investigator" class="section level3">
+<h3><strong>Daniel J. Schad</strong>, Principal investigator</h3>
+<div class="row">
+<div class="col-md-6" markdown="1">
+<p>Daniel Schad is full professor of Quantitative Methods at <a
+href="https://www.health-and-medical-university.de">HMU Health and
+Medical University Potsdam</a>. He graduated from Potsdam University
+(Germany) and worked as a postdoc at the Charité in Berlin (Germany; in
+collaboration with ETH / University Zürich, Switzerland) and at the
+University of Potsdam. He was assistant professor (tenure track) for
+Cognitive Science and Artificial Intelligence at Tilburg University in
+Tilburg (Netherlands) before he started his lab in Potsdam in October
+2020.</p>
+<p>E-mail: <a href="mailto:danieljschad@gmail.com"
+class="email">danieljschad@gmail.com</a></p>
+</div>
+<div class="col-md-4" markdown="1">
+<div class="float" id="id">
+<img src="images/Foto_Daniel_Zeit.png" class="class"
+style="width:80.0%;height:80.0%" alt="Foto: Gene Glover" />
+<div class="figcaption">Foto: Gene Glover</div>
+</div>
+</div>
+</div>
+</div>
+<div id="laura-wirth-phd-student" class="section level3">
+<h3><strong>Laura Wirth</strong>, PhD student</h3>
+<div class="row">
+<div class="col-md-6" markdown="1">
+<p>Laura received her Master in Psychology from the Humboldt University
+zu Berlin (Germany) and a Bachelor in Psychology from the University of
+Göttingen (Germany). She joined the lab in December 2022 and works on
+computational mechanisms in Pavlovian conditioning
+(Pavlovian-instrumental transfer and sign- versus goal-tracking) as well
+as on statistical methods.</p>
+<p>E-mail: <a href="mailto:l.a.wirth@hotmail.de"
+class="email">l.a.wirth@hotmail.de</a></p>
+</div>
+<div class="col-md-4" markdown="1">
+<p><img src="images/Foto_Laura.jpg" id="id" class="class"
+style="width:80.0%;height:80.0%" /></p>
+</div>
+</div>
+</div>
+<div id="nassim-sadedin-phd-student-fast-track" class="section level3">
+<h3><strong>Nassim Sadedin</strong>, PhD student (fast-track)</h3>
+<div class="row">
+<div class="col-md-6" markdown="1">
+<p>Nassim holds a Bachelors of Science in Business Administration and in
+Psychology and has work experience in the industry (ex Daimler Sales, ex
+Airbus Digitalization). Nassim is pursuing a masters in Psychotherapy at
+Freie Universität Berlin (expected graduation fall 2026). In parallel he
+is pursuing a fast-track PhD in computational cognitive neuroscience. He
+has already worked on empirical studies investigating the influence of
+mind wandering and transcutaneous auricular vagus nerve stimulation
+(TaVNS) on computationally defined instrumental learning processes.
+Currently he is working on an integrative model of Pavlovian learning
+and gaze dynamics, that aims to investigate human sign- and
+goal-tracking.</p>
+<p>E-mail: <a href="mailto:n.sadedin@gmail.com"
+class="email">n.sadedin@gmail.com</a></p>
+</div>
+<div class="col-md-4" markdown="1">
+<p><img src="images/Foto_Nassim.jpg" id="id" class="class"
+style="width:80.0%;height:80.0%" /></p>
+</div>
+</div>
+</div>
+<div id="romana-caposova-phd-student" class="section level3">
+<h3><strong>Romana Caposova</strong>, PhD student</h3>
+<div class="row">
+<div class="col-md-6" markdown="1">
+<p>Romana holds an MSc in Psychology from the University of Greenwich
+and an MSc in Computational Cognitive Neuroscience from Goldsmiths,
+University of London. Her PhD research examines how reward expectations
+and experience influence attention, learning, and action control.
+Combining eye-tracking, behavioral experiments, and computational
+modeling, she studies how value-based predictions guide gaze and
+behavior during Pavlovian and instrumental learning. More broadly, she
+is interested in computational approaches to cognition, particularly how
+learned internal representations shape attention, decision-making, and
+adaptive behavior.</p>
+<p>E-mail: <a href="mailto:caposovaromana@gmail.com"
+class="email">caposovaromana@gmail.com</a></p>
+</div>
+<div class="col-md-4" markdown="1">
+<p><img src="images/Foto_Romana.jpg" id="id" class="class"
+style="width:80.0%;height:80.0%" /></p>
+</div>
+</div>
+</div>
+<div id="ole-hausendorf-phd-student" class="section level3">
+<h3><strong>Ole Hausendorf</strong>, PhD student</h3>
+<div class="row">
+<div class="col-md-6" markdown="1">
+<p>Ole completed a Master’s degree in Neurocognitive Psychology at
+University of Oldenburg and a Bachelor’s degree in Psychology at
+Hochschule Fresenius. His research interests include neuroimaging and
+computational modelling. He has experience in auditory M/EEG analysis
+and in structural and functional MRI analysis in Parkinson’s disease
+patients. In the lab, he investigates language processing using EEG and
+large language models.</p>
+<p>E-mail: <a href="mailto:ole.hausendorf@hmu-potsdam.de"
+class="email">ole.hausendorf@hmu-potsdam.de</a></p>
+</div>
+<div class="col-md-4" markdown="1">
+<p><img src="images/Foto_Ole.jpg" id="id" class="class"
+style="width:80.0%;height:80.0%" /></p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
