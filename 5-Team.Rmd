@@ -29,6 +29,8 @@ E-mail: danieljschad@gmail.com
   
 Laura received her Master in Psychology from the Humboldt University zu Berlin (Germany) and a Bachelor in Psychology from the University of Göttingen (Germany). She joined the lab in December 2022 and works on computational mechanisms in Pavlovian conditioning (Pavlovian-instrumental transfer and sign- versus goal-tracking) as well as on statistical methods.
 
+E-mail: l.a.wirth@hotmail.de
+
   </div>
   <div class="col-md-4" markdown="1">
 
@@ -39,12 +41,14 @@ Laura received her Master in Psychology from the Humboldt University zu Berlin (
 
 
 
-### **Nassim Sadedin**, student assistant
+### **Nassim Sadedin**, PhD student (fast-track)
 
 <div class="row">
   <div class="col-md-6" markdown="1">
   
-Nassim holds a Master in Buisness Administration and has work experience in the industry. He is currently pursuing his bachelor's degree in Psychology at the MSB Medical School Berlin. He joined the lab in October 2021 and works on computational mechanisms of Pavlovian conditioning, on model-free versus model-based instrumental learning (including the influence of mind wandering and relation to subjective self-reports).
+Nassim holds a Bachelors of Science in Business Administration and in Psychology and has work experience in the industry (ex Daimler Sales, ex Airbus Digitalization). Nassim is pursuing a masters in Psychotherapy at Freie Universität Berlin (expected graduation fall 2026). In parallel he is pursuing a fast-track PhD in computational cognitive neuroscience. He has already worked on empirical studies investigating the influence of mind wandering and transcutaneous auricular vagus nerve stimulation (TaVNS) on computationally defined instrumental learning processes. Currently he is working on an integrative model of Pavlovian learning and gaze dynamics, that aims to investigate human sign- and goal-tracking.
+
+E-mail: n.sadedin@gmail.com
 
   </div>
   <div class="col-md-4" markdown="1">
@@ -55,21 +59,47 @@ Nassim holds a Master in Buisness Administration and has work experience in the 
 </div>
 
 
-### **Miroslav Pap**, student assistant
 
+### **Romana Caposova**, PhD student
 
 <div class="row">
   <div class="col-md-6" markdown="1">
   
-Miroslav received his Bachelor in Economics from the Humboldt University zu Berlin (Germany), and has worked in the industry. He is currently pursuing his bachelor's degree in Psychology at the MSB Medical School Berlin. He joined the lab in October 2023 and works on computational mechanisms of Pavlovian conditioning.
+Romana holds an MSc in Psychology from the University of Greenwich and an MSc in Computational Cognitive Neuroscience from Goldsmiths, University of London. Her PhD research examines how reward expectations and experience influence attention, learning, and action control. Combining eye-tracking, behavioral experiments, and computational modeling, she studies how value-based predictions guide gaze and behavior during Pavlovian and instrumental learning. More broadly, she is interested in computational approaches to cognition, particularly how learned internal representations shape attention, decision-making, and adaptive behavior.
+
+E-mail: caposovaromana@gmail.com
 
   </div>
   <div class="col-md-4" markdown="1">
 
-![](images/Foto_Miroslav.jpg){#id .class width=80% height=80%}
+![](images/Foto_Romana.jpg){#id .class width=80% height=80%}
 
   </div>
 </div>
+
+
+
+### **Ole Hausendorf**, PhD student
+
+<div class="row">
+  <div class="col-md-6" markdown="1">
+  
+Ole completed a Master’s degree in Neurocognitive Psychology at University of Oldenburg and a Bachelor’s degree in Psychology at Hochschule Fresenius. His research interests include neuroimaging and computational modelling. He has experience in auditory M/EEG analysis and in structural and functional MRI analysis in Parkinson’s disease patients. In the lab, he investigates language processing using EEG and large language models.
+
+E-mail: ole.hausendorf@hmu-potsdam.de
+
+  </div>
+  <div class="col-md-4" markdown="1">
+
+![](images/Foto_Ole.jpg){#id .class width=80% height=80%}
+
+  </div>
+</div>
+
+
+
+
+
 
 
 

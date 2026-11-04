@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "<br>Home"
 output: html_document
 ---
 
@@ -19,13 +19,12 @@ output: html_document
 
 # **Daniel J. Schad**
 
-Psychology Department, [Health and Medical University](https://www.health-and-medical-university.de), Potsdam, Germany
+Psychology Department & Institute of Mind, Brain and Behavior, [HMU Health and Medical University](https://www.health-and-medical-university.de), Potsdam, Germany
 
 [Google Scholar](https://scholar.google.com/citations?user=SmoMdbwAAAAJ&hl=de), 
 [Researchgate](https://www.researchgate.net/profile/Daniel_Schad), 
 [Orcid ID](https://orcid.org/0000-0003-2586-6823), 
 [Loop](https://loop.frontiersin.org/people/103261/overview)
-
 
 # *Research Interests*
 
@@ -42,15 +41,15 @@ Psychology Department, [Health and Medical University](https://www.health-and-me
 
 ### Computational Psychiatry and Decision-Making
 
-- Model-free and model-based decisions; arbitration based on cognitive abilities
 - Pavlovian conditioning (Human sign- and goal-tracking)
 - Alcohol addiction: Role of model-free and Pavlovian responses
+- Model-free and model-based decisions; arbitration based on cognitive abilities
 
 ### Reading
 
 - Eye-movement control
-- Zoom-lens of attention and foveal load
 - Mindless reading (i.e., mind wandering during reading)
+- Zoom-lens of attention and foveal load
 - Sentence comprehension
 
 
@@ -58,4 +57,6 @@ Psychology Department, [Health and Medical University](https://www.health-and-me
 </div>
 <div class="col-sm-6">
 
-![](images/Foto_Daniel.jpg)
+![](images/Foto_Daniel_Zeit.png)
+Foto: Gene Glover
+<!--![](images/Foto_Daniel.jpg)-->

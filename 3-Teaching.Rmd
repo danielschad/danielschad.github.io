@@ -1,7 +1,55 @@
 ---
-title: "Teaching"
+title: "<br>Teaching"
 output: html_document
 ---
+
+- September 2024: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2024](https://vasishth.github.io/smlp2024/), Foundations of Frequentist Statistics, co-taught with Prof. Dr. J. Verissimo, University of Potsdam
+
+- Winter Term 2024-2025: Lecture Multivariate Statistics & Research Methods, Master Psychology, Health and Medical University, Potsdam
+
+- Winter Term 2024-2025: Seminar Multivariate Statistics & Research Methods, Master Psychology, Health and Medical University, Potsdam
+
+- Winter Term 2024-2025: Lecture Statistics 2, Health and Medical University, Potsdam
+
+- June 2024: Introduction to Bayesian Statistics and Bayesian Workflow, Invited Workshop at the Max Planck Institut for Cognitive and Neurosciences, Leipzig
+
+- Summer Term 2024: Lecture Statistics 2, Health and Medical University, Potsdam
+
+- Summer Term 2024: Seminar Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Lecture Multivariate Statistics & Research Methods, Master Psychology, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Seminar Multivariate Statistics & Research Methods, Master Psychology, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Seminar Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Lecture Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Seminar Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2023-2024: Seminar Statistics 1, Health and Medical University, Potsdam
+
+- Summer Term 2023: Lecture Statistics 1, Health and Medical University, Erfurt
+
+- Summer Term 2023: Lecture Statistics 2, Health and Medical University, Potsdam
+
+- Summer Term 2023: Seminar Statistics 2, Health and Medical University, Potsdam
+
+- Summer Term 2023: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2023](https://vasishth.github.io/smlp2023/), Foundations of Frequentist Statistics, co-taught with Prof. Dr. J. Verissimo, University of Potsdam
+
+- March 2023: Introduction to Bayesian Statistics and Bayesian Workflow, Invited Workshop at the Max Planck Institut for Cognitive and Neurosciences, Leipzig
+
+- Winter Term 2022-2023: Lecture Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2022-2023: Seminar Statistics 2, Health and Medical University, Potsdam
+
+- Winter Term 2022-2023: Seminar Research Methods 2, Health and Medical University, Potsdam
+
+- Sept. 2022: Introduction to Bayesian Statistics. Invited Workshop in the Institut for Psychology, Universit\"at Oldenburg
+
+- Aug. 2022: Linear mixed-effects models, Invited Workshop at the Max Planck Institut for Cognitive and Neurosciences, Leipzig
+
+- Summer Term 2022: Scientific work, Medical School Berlin
 
 - Winter Term 2021-2022: Statistic II, Lecture, Health and Medical University, Potsdam
 
@@ -9,15 +57,15 @@ output: html_document
 
 - Oct. 2021: Linear mixed-effects models, invited Workshop at the Department for Information Systems, University of Innsbruck
 
-- Summer Term 2021: Scientific working, Medical School Berlin
+- Summer Term 2021: Scientific work, Medical School Berlin
 
-- Summer Term 2021: Scientific working, Health and Medical University, Potsdam
+- Summer Term 2021: Scientific work, Health and Medical University, Potsdam
 
 - Summer Term 2021: Seminar Research Methods 2, Health and Medical University, Potsdam
 
 - Feb. 2021: Power analyses for linear mixed-effects models, invited Workshop at the Potsdam Embodied Cognition Group, University of Potsdam
 
-- Winter Term 2020-2021: Scientific working, Health and Medical University Potsdam
+- Winter Term 2020-2021: Scientific work, Health and Medical University Potsdam
 
 - Summer Term 2020: [Summer School on Statistical Methods for Linguists and Psychology (SMLP) 2020](https://vasishth.github.io/smlp2020/), Frequentist & Bayesian, Beginner & Advanced Tracks, co-taught with Prof. Dr. R. Kliegl, Prof. Dr. D. Bates, Dr. A. Bürki, Dr. B. Nicenboim, and Prof. Dr. S. Vasishth, University of Potsdam
 
@@ -37,7 +85,7 @@ output: html_document
 
 - Winter Term 2016/17: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
 
-- Summer Term 2016: Scientific working and writing, Seminar co-taught with Dr. S. Heinzel, University of Potsdam
+- Summer Term 2016: Scientific work and writing, Seminar co-taught with Dr. S. Heinzel, University of Potsdam
 
 - Winter Term 2015/16: Statistics with R, Seminar co-taught with Prof. Dr. R. Kliegl, University of Potsdam
 

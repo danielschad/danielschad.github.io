@@ -1,0 +1,9 @@
+# Never publish credentials or local R history
+Token_Password.txt
+.Rhistory
+.Rapp.history
+.Rproj.user/
+
+# macOS files and the local render folder
+.DS_Store
+_site/

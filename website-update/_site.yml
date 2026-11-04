@@ -1,0 +1,23 @@
+name: "Daniel J. Schad"
+navbar:
+  title: "Daniel J. Schad"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Team"
+      href: 5-Team.html
+    - text: "Research"
+      href: 1-Research.html
+    - text: "Publications"
+      href: 2-Publications.html
+    - text: "Teaching"
+      href: 3-Teaching.html
+    - text: "Contact"
+      href: 4-Contact.html
+    - text: "Jobs"
+      href: 6-Jobs.html
+    - text: "Workshop"
+      href: workshopSTGT.html
+output:
+  html_document:
+    css: styles.css

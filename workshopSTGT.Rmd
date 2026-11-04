@@ -25,6 +25,7 @@ output:
 .stgt-nowrap { white-space: nowrap; }
 .stgt-lead { font-size: 17px; line-height: 1.5; color: #333; margin: 0 0 22px; }
 .stgt-lead strong { color: #222; }
+.stgt-lead-note { color: #555; }
 .stgt-actions { position: relative; margin: 0; }
 .stgt-actions .btn { margin: 0 8px 10px 0; }
 
@@ -80,6 +81,8 @@ output:
   .stgt-title { font-size: 34px; }
   .stgt-subtitle { font-size: 20px; }
   .stgt-figure { max-width: 260px; margin-top: 10px; }
+  /* keep the two buttons on one row on narrow phones */
+  .stgt-actions .btn-lg { padding-left: 12px; padding-right: 12px; }
 }
 @media (max-width: 599px) {
   .stgt-facts dl { grid-template-columns: minmax(0, 1fr); }
@@ -93,9 +96,10 @@ output:
 <h1 class="stgt-title">Sign- and <span class="stgt-nowrap">goal-tracking</span><span class="sr-only">:</span>
 <span class="stgt-subtitle">Human data, computational models, and rodent foundations</span></h1>
 <p class="stgt-lead">An international workshop in Potsdam, Germany<br>
-<strong>20–22&nbsp;November&nbsp;2026</strong></p>
+<strong>20–22&nbsp;November&nbsp;2026</strong><br>
+<span class="stgt-lead-note">Attend on site or online via Zoom</span></p>
 <p class="stgt-actions">
-<a class="btn btn-primary btn-lg" href="mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&amp;body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A">Register by email</a>
+<a class="btn btn-primary btn-lg" href="mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&amp;body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20attend%3A%20on%20site%20in%20Potsdam%20%2F%20online%20via%20Zoom%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%20%28on%20site%20only%29%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A">Register by email</a>
 <a class="btn btn-default btn-lg" href="#share">Share this page</a>
 </p>
 </div>
@@ -133,19 +137,19 @@ output:
 
 ::: {.stgt-facts}
 Dates
-:   Friday 20 to Sunday 22 November 2026
+:   Friday 20 (14:00), to Sunday 22 (14:00) November 2026
 
 Location
 :   Potsdam, Germany, close to the [Kongresshotel Potsdam](https://www.kongresshotel-potsdam.com/)
 
-Reply by
-:   Sunday 18 October 2026
+Registration
+:   On-site places are limited; online participation via Zoom is open — please email us
 
 Participation fee
-:   €70, covering some food and drinks
+:   €70 on site, covering some food and drinks; online attendance is free
 
 Posters
-:   Welcome from researchers at all career stages
+:   On site only; welcome from researchers at all career stages
 
 Contact
 :   [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com)
@@ -168,31 +172,33 @@ Speakers and contributors currently include (in alphabetical order):
 ::: {.stgt-names}
 - Patrick Anselme
 - François Cinotti
-- Shelly Flagel
+- Shelly Flagel (online)
 - Sara Garofalo
 - Michelle Heck
 - Robert Honey
 - Jonathan Morrow
+- Cristina Orsini
 - Martin Paulus
-- Terry Robinson
+- Terry Robinson (online)
 - Nicola Sambuco
-- Benjamin Saunders
+- Benjamin Saunders (online)
 - Francesco Versace
+- Reinout Wiers (online)
 :::
 
 Ralf Engbert and Daniel J. Schad facilitate the workshop, and further contributors will join the programme.
 
 ## Taking part
 
-Please let us know **by Sunday 18 October 2026** whether you are interested and able to attend, by email to [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com). We are happy to provide further details on the programme, venue, and accommodation.
+On-site places are limited; online participation via Zoom is open — please email us at [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com) and let us know whether you would like to join us in Potsdam or online. We are happy to provide further details on the programme, venue, and accommodation.
 
-Participation is €70, which covers some food and drinks.
+Participation on site is €70, which covers some food and drinks. **Online attendance is free.**
 
-[Register by email](mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A){.btn .btn-primary}
+[Register by email](mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20attend%3A%20on%20site%20in%20Potsdam%20%2F%20online%20via%20Zoom%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%20%28on%20site%20only%29%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A){.btn .btn-primary}
 
 ### Presenting a poster
 
-A poster session open to researchers at all career stages will run alongside the workshop, and participants are warmly encouraged to present relevant work. If you would like to present a poster, please send us a title and an abstract of your work with your email.
+A poster session will run alongside the workshop, open to researchers at all career stages, and participants attending in Potsdam are warmly encouraged to present relevant work. Posters are presented on site only. If you would like to present a poster, please send us a title and an abstract of your work with your email.
 
 ## Venue and accommodation
 
@@ -208,7 +214,7 @@ We would be very happy if you shared this invitation with colleagues, students, 
 <input class="form-control" id="stgt-url" type="text" value="https://danielschad.github.io/workshopSTGT.html" readonly>
 <div class="stgt-share-buttons">
 <button class="btn btn-default" id="stgt-share-button" type="button">Copy link</button>
-<a class="btn btn-default" href="mailto:?subject=Workshop%20on%20sign-%20and%20goal-tracking%2C%20Potsdam%2C%2020%E2%80%9322%20November%202026&amp;body=You%20may%20be%20interested%20in%20this%20workshop%3A%0D%0A%0D%0ASign-%20and%20goal-tracking%3A%20Human%20data%2C%20computational%20models%2C%20and%20rodent%20foundations%0D%0APotsdam%2C%20Germany%2C%2020%E2%80%9322%20November%202026%0D%0A%0D%0Ahttps%3A%2F%2Fdanielschad.github.io%2FworkshopSTGT.html%0D%0A">Email to a colleague</a>
+<a class="btn btn-default" href="mailto:?subject=Workshop%20on%20sign-%20and%20goal-tracking%2C%20Potsdam%2C%2020%E2%80%9322%20November%202026&amp;body=You%20may%20be%20interested%20in%20this%20workshop%3A%0D%0A%0D%0ASign-%20and%20goal-tracking%3A%20Human%20data%2C%20computational%20models%2C%20and%20rodent%20foundations%0D%0APotsdam%2C%20Germany%2C%2020%E2%80%9322%20November%202026%0D%0AOn%20site%20or%20online%20via%20Zoom%0D%0A%0D%0Ahttps%3A%2F%2Fdanielschad.github.io%2FworkshopSTGT.html%0D%0A">Email to a colleague</a>
 <span class="stgt-share-status" id="stgt-share-status" role="status" aria-live="polite"></span>
 </div>
 </div>

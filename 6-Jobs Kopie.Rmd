@@ -1,0 +1,116 @@
+---
+title: "<br>Job openings"
+output: html_document
+---
+
+
+
+- 1 PhD position (75%) on "Reinforcement learning during Pavlovian conditioning" for 3.5 years
+- 1 PhD position (65%) on "Mindless reading: EEG & large language models" for 3.5 years
+
+**--> funding has been approved by the DFG**
+
+### **PhD position (m/f/d) – Reinforcement learning during Pavlovian conditioning**
+
+The HMU Health and Medical University is a private state-recognized university located in the Villa Carlshagen in Potsdam. It was founded in 2017 by the managing director Ilona Renken-Olthoff and started operating with two departments (Department of Medicine and Department of Health and Sports) in the winter semester 2020/21. The HMU offers study programs in human medicine (state examinations), in psychology (bachelor and master), and other bachelor's and master's degree programs.
+
+The campus at the Villa Carlshagen is located directly on Lake Templin and offers optimal conditions for a unique learning and working atmosphere in the midst of the greenery of the state capital Potsdam. The hospital Ernst von Bergmann in Potsdam is our cooperation partner for the clinical part of the state examination course in human medicine.
+
+The University of Potsdam hosts leading groups in cognitive sciences and linguistics, providing a vibrant interdisciplinary scientific environment (http://www.uni-potsdam.de/en/cognitive-sciences/index.html). The lab will be associated with two Collaborative Research Centers relevant to its research focus, namely CRC 1287 „Limits of variability in language” (https://www.sfb1287.uni-potsdam.de/en) and CRC 1294 „Data assimilation: The seamless integration of models and data“ (https://www.sfb1294.de/). 
+
+We are looking for an academic staff member with focus on research (m/f/d) – Reinforcement learning during Pavlovian conditioning (75% position for 3.5 years, equivalent E13 TV-L) to support our team starting in January 2026 or later. ~~The position is conditional on a final funding decision for CRC 1294 (3rd funding period; which is very likely since it has been rated as excellent).~~ **--> funding has been approved by the DFG**
+
+Your tasks: You will work on a project aimed at investigating individual differences in Pavlovian conditioning, namely human "sign/goal tracking" (see e.g. Schad et al., 2020, Nature Human Behavior; www.quentinhuys.com/tcpw/events/daniel-schad/), including model-free and model-based Pavlovian and instrumental learning, as well as other state-of-the-art computational learning processes. The activity will take place under the guidance of Prof. Dr. Daniel Schad (Chair of Quantitative Methods at the HMU in Potsdam) and in cooperation with Prof. Dr. Ralf Engbert (Chair of Cognitive and Biological Psychology, University of Potsdam, Potsdam, Germany). It will be situated in a collaborative research center (CRC 1294; www.sfb1294.de) on “Data assimilation” at the University of Potsdam.
+
+The position is a very good opportunity for a candidate with expertise/interest in programming (R, Matlab, Python) and behavioral and eye tracking data to conduct cutting-edge research in reinforcement learning during Pavlovian conditioning, respectively, and to work on an exciting research project that includes international publications and scientific presentations.
+
+The position involves
+
+-	Designing, programming, and running experiments on reinforcement learning.
+-	Conducting advanced analyses of eye tracking and behavioral data, including computational cognitive modeling (reinforcement learning theory).
+-	Preparing manuscripts for publication in international journals (peer-review) and presenting results at international conferences.
+-	Working on a PhD.
+
+We offer
+
+-	An interesting scientific environment at a new and growing university in beautiful surroundings
+-	An excellently equipped eye tracking laboratory
+-	Excellent computational resources
+-	Support by student research assistants
+-	A friendly and open working atmosphere
+
+The ideal candidate will have:
+
+-	A very good master's degree in a relevant field (e.g., psychology, cognitive science, cognitive neuroscience, medicine, computational sciences, ...)
+-	Experience with or interest in methods of behavior analysis
+-	Excellent statistical skills
+-	Good programming skills (e.g., R, Matlab, ...) or very high motivation to learn these programming languages
+-	Skill in / high interest in learning computational cognitive modeling
+-	Excellent writing, communication, and presentation skills (in English)
+-	Research experience or a strong interest in the professorship's area of work, e.g., cognitive and computational psychology / neuroscience / computational psychiatry, reinforcement learning, decision making, Pavlovian conditioning
+-	Systematic and independent working style
+-	Excellent organizational and teamwork skills, strong motivation and commitment
+-	No German language proficiency is required
+
+Potsdam is a very beautiful historic city and its palaces are UNESCO World Heritage Sites. In addition, Potsdam is within commuting distance to Berlin, a culturally vibrant and progressive city. Both cities have a high quality of life.
+
+Your application:
+
+Please send your informative application documents (incl. a 1-2 pages letter explaining your motivation incl. research interests, curriculum vitae, degree certificates, with at least one name + email for a reference) electronically (as one PDF) to daniel.schad@health-and-medical-university.de
+
+Application deadline: November 30, 2025 (applications will be considered until the position is filled)
+
+
+### **PhD position (m/f/d) – Mindless reading: EEG & large language models**
+
+The HMU Health and Medical University is a private state-recognized university located in the Villa Carlshagen in Potsdam. It was founded in 2017 by the managing director Ilona Renken-Olthoff and started operating with two departments (Department of Medicine and Department of Health and Sport) in the winter semester 2020/21. The HMU offers study programs in human medicine (state examinations), in psychology (bachelor and master), and other bachelor's and master's degree programs.
+
+The campus at the Villa Carlshagen is located directly on Lake Templin and offers optimal conditions for a unique learning and working atmosphere in the midst of the greenery of the state capital Potsdam. The hospital Ernst von Bergmann in Potsdam is our cooperation partner for the clinical part of the state examination course in human medicine.
+
+The University of Potsdam hosts leading groups in cognitive sciences and linguistics, providing a vibrant interdisciplinary scientific environment (http://www.uni-potsdam.de/en/cognitive-sciences/index.html). The lab will be associated with two Collaborative Research Centers relevant to its research focus, namely CRC 1287 „Limits of variability in language” (https://www.sfb1287.uni-potsdam.de/en) and CRC 1294 „Data assimilation: The seamless integration of models and data“ (https://www.sfb1294.de/). 
+
+We are looking for an academic staff member with focus on research (m/f/d) – Mindless reading: EEG & large language models (65% position for 3.5 years, equivalent E13 TV-L) to support our team starting in January 2026 or later. ~~The position is conditional on a final funding decision for CRC 1287 (3rd funding period; which is very likely since it has been rated as excellent).~~ **--> funding has been approved by the DFG**
+
+Your tasks: You will work on a project aimed at investigating mindless reading via EEG and large language models, namely studying the “levels of inattention hypothesis” that mindless reading is graded (see e.g. Schad et al., 2012, Cognition; Schad et al., 2024, JEP:LMC), using EEG recordings during reading, as well as computational modeling using state-of-the-art large
+language models. The activity will take place under the guidance of Prof. Dr. Daniel Schad (Chair of Quantitative Methods at the HMU in Potsdam) and Prof. Dr. Milena Rabovsky (Chair of Cognitive Neuroscience, University of Potsdam, Potsdam, Germany). It will be situated in collaborative research center CRC 1287 (www.sfb1287.uni-potsdam.de/en) on “Limits of variability in language” at the University of Potsdam.
+
+The position is a very good opportunity for a candidate with expertise/interest in programming (e.g., Python, R, Matlab), EEG data analysis, and large language models to conduct research on mindless reading, and to work in an exciting research project that includes international publications and scientific presentations.
+
+The position involves
+
+-	Designing, programming, and running EEG experiments on mindless reading.
+-	Conducting advanced analyses of EEG and behavioral data.
+-	Performing computational cognitive modeling using large language models.
+-	Preparing manuscripts for publication in international journals (peer-review) and presenting results at international conferences.
+-	Working on a PhD.
+
+We offer
+
+-	An interesting scientific environment at a new and growing university in beautiful surroundings
+-	An excellently equipped EEG laboratory
+-	Excellent computational resources
+-	Support by student research assistants
+-	A friendly and open working atmosphere
+
+The ideal candidate will have:
+
+-	A very good master's degree in a relevant field (e.g., psychology, cognitive science, cognitive neuroscience, medicine, computational sciences, ...)
+-	Experience with or interest in methods of EEG and behavior analysis
+-	Excellent statistical skills
+-	Good programming skills (e.g., Python, R, Matlab, ...) or very high motivation to learn these programming languages
+-	Skill in / high interest in learning modeling with large language models
+-	Excellent writing, communication, and presentation skills (in English)
+-	Research experience or a strong interest in the professorships’ area of work, e.g., cognitive and computational psychology / neuroscience, EEG, mindless reading, large language models
+-	Systematic and independent working style
+-	Excellent organizational and teamwork skills, strong motivation and commitment
+-	No German language proficiency is required
+
+Potsdam is a very beautiful historic city and its palaces are UNESCO World Heritage Sites. In addition, Potsdam is within commuting distance to Berlin, a culturally vibrant and progressive city. Both cities have a high quality of life.
+
+Your application:
+
+Please send your informative application documents (incl. a 1-2 pages letter explaining your motivation incl. research interests, curriculum vitae, degree certificates, with at least one name + email for a reference) electronically (as one PDF) to daniel.schad@health-and-medical-university.de
+
+Application deadline: November 30, 2025 (applications will be considered until the position is filled)
+
+

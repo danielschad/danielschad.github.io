@@ -1,11 +1,13 @@
 ---
-title: "Publications"
+title: "<br>Publications"
 output: html_document
 ---
 
 "+" equal contribution 
 
 ## Press & online talks
+
+- [Report on ZEIT ONLINE](https://www.zeit.de/gesundheit/2023-01/psychische-gesundheit-corona-lockdown-entschleunigung-studie)
 
 - **Schad, D.J.** (2020). Dissociating neural learning signals in human sign- and goal-trackers. [Talk presented at the Transcontinental Computational Psychiatry Workgroup](https://www.quentinhuys.com/tcpw/events/daniel-schad/).
 
@@ -15,13 +17,13 @@ output: html_document
 
 - [Report on SciGlow](https://sciglow.com/health/different-learning-strategies-used-during-pavlovian-conditioning/)
 
-## Books (in progress)
+## Books
 
-- Nicenboim, B., **Schad, D.J.** & Vasishth, S. (in prep). An introduction to Bayesian data analysis for cognitive science. CRC Press. [https://vasishth.github.io/bayescogsci/book/](https://vasishth.github.io/bayescogsci/book/)
+- Nicenboim, B., **Schad, D.J.** & Vasishth, S. (under revision). An introduction to Bayesian data analysis for cognitive science. CRC Press. [https://vasishth.github.io/bayescogsci/book/](https://vasishth.github.io/bayescogsci/book/)
 
 - Vasishth, S., **Schad, D.J.**, Bürki, A., & Kliegl, R. (in prep). Linear mixed models for linguistics and psychology: A comprehensive introduction. CRC Press. [https://vasishth.github.io/Freq_CogSci/](https://vasishth.github.io/Freq_CogSci/)
 
-## Preprints (in progress)
+## Preprints
 
 - **Schad, D.J.**, Rapp, M.A., Dayan, P., Huys, Q.J.M. (in prep). Bayesian model selection and estimation: Simultaneous random effects for models and parameters. [Manuscript on github](https://github.com/danielschad/simultaneousRandomEffects/blob/master/SchadRappDayanHuys.pdf)
 
@@ -33,16 +35,48 @@ output: html_document
 
 ## Peer reviewed journals
 
+### 2025
+
+- Binz, M., Alaniz, S., Roskies, A., Aczel, B., Bergstrom, C. T., Allen, C., , ..., **Schad, D.J.**, ... & Schulz, E. (2025). How should the advancement of large language models affect the practice of science? *Proceedings of the National Academy of Sciences of the United States of America, 122*(5), e2401227121, doi: [10.1073/pnas.2401227121](https://doi.org/10.1073/pnas.2401227121)
+
+- Davis-Stober, C. P., Sarafoglou, A., Aczel, B., Chandramouli, S. H., Errington, T. M., Field, S. M., Fishbach, A., Freire, J., Ioannidis, J. P. A., Oberauer, K., Pestilli, F., Ressl, S., **Schad, D. J.**, Ter Schure, J., Tentori, K., van Ravenzwaaij, D., Vandekerckhove, J., & Gundersen, O. E. (2025). How can we make sound replication decisions? *Proceedings of the National Academy of Sciences of the United States of America, 122*(5), e2401236121. doi: [10.1073/pnas.2401236121](https://doi.org/10.1073/pnas.2401236121)
+
+### 2024
+
+- **Schad, D.J.**, & Vasishth, S. (2024). Null hypothesis Bayes factor estimates can be biased in (some) common factorial designs: A simulation study. *arXiv preprint* [arXiv:2406.08022](https://arxiv.org/abs/2406.08022)
+
+- **Schad, D.J.**, Nuthmann, A., Rösler, F., & Engbert, R. (2024). Mental effort during mindless reading? Pupil fluctuations indicate internal processing during levels of inattention. *Journal of Experimental Psychology - Learning, Memory & Cognition, 50*(10), 1637-1649, doi:[10.1037/xlm0001384](https://doi.org/10.1037/xlm0001384), PsyArXiv preprint [https://osf.io/preprints/psyarxiv/w7s64](https://osf.io/preprints/psyarxiv/w7s64)
+
+- Liu, S., Zhao, M., Li, R., Huang, C., Du, J., **Schad, D.J.**, & Heinzel, S. (2024). A wandering mind reflects a lonely mind: A cross-cultural study. *Current Research in Behavioral Sciences, 100153*, doi: [10.1016/j.crbeha.2024.100153](https://doi.org/10.1016/j.crbeha.2024.100153)
+
+- Xu, L.X., Zhang, J. L., Geng, X.M., Song, K.R., Zeng, P.P., Potenza, M.N., **Schad, D.J.** & Zhang, J. T. (2024). Pavlovian-to-instrumental transfer and outcome-devaluation effects in individuals with gaming experience. *Computers in Human Behavior, 155*, 108188, doi: [10.1016/j.chb.2024.108188](https://doi.org/10.1016/j.chb.2024.108188)
+
+- Liu, S., Li, R., Wegner, L., Huang, C., Haucke, M.N., **Schad, D.J.**, ... & Heinzel, S. (2024). High-mind wandering correlates with high risk for problematic alcohol use in China and Germany. *European Archives of Psychiatry and Clinical Neuroscience, 274*(2), 335-341, doi: [10.1007/s00406-023-01555-4](https://doi.org/10.1007/s00406-023-01555-4)
+
+- **Schad, D.J.**, Nicenboim, B., & Vasishth, S. (2024). Data aggregation can lead to biased inferences in Bayesian linear mixed models and Bayesian ANOVA. *Psychological Methods*, Advance online publication. [https://doi.org/10.1037/met0000621](https://doi.org/10.1037/met0000621), arXiv preprint [2203.02361](https://arxiv.org/abs/2203.02361)
+
+### 2023
+
+- Kappes, C., Marion-Jetten, A.S., Taylor, G., **Schad, D.J.**, Dreßler, B., El-Hayek, S., ... & Stach, P. (2023). The role of mindfulness and autonomous motivation for goal progress and goal adjustment: an intervention study. *Motivation and Emotion*, 1-19, doi: [10.1007/s11031-023-10033-2](https://doi.org/10.1007/s11031-023-10033-2)
+
+- van Doorn, J., ..., **Schad, D.J.**, ..., Aust, F. (2023). Bayes Factors for Mixed Models: a Discussion. *Computational Brain & Behavior*, doi: [10.1007/s42113-022-00160-3](https://doi.org/10.1007/s42113-022-00160-3)
+
+- Liu, S., Rabovsky, M., & **Schad, D.J.** (2023). Spontaneous mind wandering impairs model-based decision making. Plos One, 18(1), e0279532, doi: [10.1371/journal.pone.0279532](https://doi.org/10.1371/journal.pone.0279532)
+
 ### 2022
 
-- **Schad, D.J.** & Vasishth, S. (in press). The posterior probability of a null hypothesis given a statistically significant result. arXiv preprint [1901.06889](https://arxiv.org/abs/1901.06889); [https://osf.io/9g5bp/](https://osf.io/9g5bp/), doi: [10.48550/arXiv.1901.06889](https://doi.org/10.48550/arXiv.1901.06889), Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
+- **Schad, D.J.** & Rabovsky, M. (2022). Social-distancing induced deceleration can enhance subjective well-being. *Applied Psychology: Health and Well-being*, doi: [10.1111/aphw.12414](https://doi.org/10.1111/aphw.12414)
+
+- Bağcıa, B., Düsmezb, S., Zorlua, N., Bahtiyarc, G., Isıklıa, S., Bayrakcıa, A., Heinz, A., **Schad, D.J.**, Sebold, M. (2022). Computational analysis of probabilistic reversal learning deficits in male subjects with alcohol use disorder. *Frontiers in Psychiatry*, doi: [10.3389/fpsyt.2022.960238](https://doi.org/10.3389/fpsyt.2022.960238)
+
+- **Schad, D.J.** & Vasishth, S. (2022). The posterior probability of a null hypothesis given a statistically significant result. *The Quantitative Methods for Psychology*, doi: [10.20982/tqmp.18.2.p011](https://doi.org/10.20982/tqmp.18.2.p011), Shiny app: [https://danielschad.shinyapps.io/probnull](https://danielschad.shinyapps.io/probnull)
 
 - **Schad, D.J.**, Nicenboim, B., Bürkner, P.-C., Betancouort, M., & Vasishth, S. (2022). Workflow techniques for the robust use of Bayes factors. *Psychological Methods*, doi: [10.1037/met0000472](https://doi.org/10.1037/met0000472), arXiv preprint: [arXiv:2103.08744](https://arxiv.org/abs/2103.08744)
 
 - Vasishth, S., Yadav, H., **Schad, D.J.**, & Nicenboim, B. (2022). Sample size determination for Bayesian hierarchical models commonly used in psycholinguistics.
 *Computational Brain and Behavior*, doi: [10.1007/s42113-021-00125-y](https://doi.org/10.1007/s42113-021-00125-y), PsyArXiv preprint: [PsyArXiv:u8yvc](https://psyarxiv.com/u8yvc)
 
-- Magrabi, A., Beck, A., **Schad, D.J.**, Lett, T.A., Stoppel, C.M., Charlet, K., Kiefer, F., Heinz, A., & Walter, H. (2022). Alcohol dependence decreases functional activation of the caudate nucleus during model‐based decision processes. *Alcoholism: Clinical and Experimental Research*, doi: [http://doi.org/10.1111/acer.14812 ](10.1111/acer.14812 )
+- Magrabi, A., Beck, A., **Schad, D.J.**, Lett, T.A., Stoppel, C.M., Charlet, K., Kiefer, F., Heinz, A., & Walter, H. (2022). Alcohol dependence decreases functional activation of the caudate nucleus during model‐based decision processes. *Alcoholism: Clinical and Experimental Research*, doi: [10.1111/acer.14812](https://doi.org/10.1111/acer.14812)
 
 ### 2021
 
