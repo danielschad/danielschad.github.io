@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Research Outcome Preferences</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d2329;
+    --muted: #5b6670;
+    --card: #f4f6f8;
+    --border: #d5dbe0;
+    --accent: #0b5f7a;
+    --accent-fg: #ffffff;
+    --selected: #e2f0f5;
+    --error: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181c;
+      --fg: #e7ebee;
+      --muted: #a3adb6;
+      --card: #1c2228;
+      --border: #34414b;
+      --accent: #5cb8d6;
+      --accent-fg: #0b1a20;
+      --selected: #173440;
+      --error: #ff8a80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 20px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 8px 0 4px; }
+  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+  .subtitle { color: var(--muted); margin: 0 0 20px; }
+  .muted { color: var(--muted); }
+  .progress { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 16px; }
+  .progress > div { height: 100%; width: 0; background: var(--accent); transition: width .25s ease; }
+  .step { color: var(--muted); font-size: .95rem; margin: 0 0 12px; }
+  .outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .outcomes { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1rem; }
+  .card p { margin: 0; }
+  .question { margin-top: 22px; }
+  .question p { margin: 0 0 8px; font-weight: 600; }
+  .choices { display: flex; gap: 10px; }
+  .choice { flex: 1; position: relative; }
+  .choice input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .choice span {
+    display: block; text-align: center; padding: 10px 12px; cursor: pointer;
+    border: 2px solid var(--border); border-radius: 8px; background: var(--bg);
+  }
+  .choice input:checked + span { border-color: var(--accent); background: var(--selected); font-weight: 600; }
+  .choice input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+  label.block { display: block; font-weight: 600; margin: 22px 0 6px; }
+  textarea {
+    width: 100%; min-height: 72px; font: inherit; padding: 8px 10px; resize: vertical;
+    border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg);
+  }
+  .consent { display: flex; gap: 10px; align-items: flex-start; margin: 20px 0 0; }
+  .consent input { width: 20px; height: 20px; margin-top: 3px; flex: none; }
+  .nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 26px; }
+  button {
+    font: inherit; padding: 10px 22px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg);
+  }
+  button.secondary { background: transparent; color: var(--accent); }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  .error { color: var(--error); min-height: 1.5em; margin: 10px 0 0; }
+  ul { padding-left: 1.3em; }
+  a { color: var(--accent); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div class="progress" aria-hidden="true"><div id="bar"></div></div>
+
+  <!-- Screen 1: information and consent -->
+  <section id="screen-welcome">
+    <h1>Research Outcome Preferences</h1>
+    <p class="subtitle">A short questionnaire on how researchers value different research outcomes</p>
+    <p>Thank you for taking part. This questionnaire takes about 10 minutes.</p>
+    <h2>About this questionnaire</h2>
+    <p>This is an informal pilot for a planned research project on how researchers value research outcomes, conducted by Daniel J. Schad (HMU Health and Medical University Potsdam). Participation is voluntary and anonymous: we do not ask for your name, your email address, or any other information that identifies you.</p>
+    <p>Nothing is sent until you click &ldquo;Submit&rdquo; at the end, so you can stop at any time by closing this page. Your answers are then sent to Daniel J. Schad by email via the form service Web3Forms and will be used only to improve the scenarios for the planned study.</p>
+    <p class="muted">Questions? Please contact <a href="https://danielschad.github.io/">Daniel J. Schad</a>.</p>
+    <div class="consent">
+      <input type="checkbox" id="consent">
+      <label for="consent">I have read this information and agree to take part.</label>
+    </div>
+    <div class="nav"><span></span><button id="btn-start" disabled>Start</button></div>
+  </section>
+
+  <!-- Screen 2: instructions -->
+  <section id="screen-instructions" hidden>
+    <h1>What to do</h1>
+    <p>On the following pages you will see eight pairs of research outcomes from the cognitive sciences. For each pair, imagine that both outcomes are possible and that you must choose which one you would prefer to happen.</p>
+    <p>There is no right answer. We are interested in your preferences, not in what you think you ought to say.</p>
+    <p>Please answer each pair twice:</p>
+    <ul>
+      <li>once for <strong>your own research</strong>: which outcome would you prefer to happen in your own work?</li>
+      <li>once for <strong>your field as a whole</strong>: which outcome would you prefer to happen in your research field generally?</li>
+    </ul>
+    <p>Click your choice for each question. Your two answers may differ, and often will.</p>
+    <h2>Background</h2>
+    <p>All scenarios concern a study comparing two hypotheses: H0, that there is no effect, and H1, that an effect of a size derived from the prior literature exists.</p>
+    <p>Each scenario tells you what the team concluded and, unusually, what was actually true. Please take the stated facts exactly as given, including the citation counts, even where they differ from what you might expect in practice. &ldquo;Person-years&rdquo; refers to combined supervisor and PhD student time. Citation counts are for the first five years after publication.</p>
+    <p>If a pair seems impossible to answer, please choose anyway and note why in the comment box.</p>
+    <div class="nav">
+      <button class="secondary" id="btn-instr-back">Back</button>
+      <button id="btn-instr-next">Continue</button>
+    </div>
+  </section>
+
+  <!-- Screens 3 to 10: one pair per screen (filled in by the script) -->
+  <section id="screen-pair" hidden>
+    <p class="step" id="pair-step"></p>
+    <div class="outcomes">
+      <div class="card"><h3>Outcome A</h3><p id="text-a"></p></div>
+      <div class="card"><h3>Outcome B</h3><p id="text-b"></p></div>
+    </div>
+    <div class="question" role="radiogroup" aria-labelledby="q-own">
+      <p id="q-own">Which would you prefer for your own research?</p>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="own" value="A"><span>Outcome A</span></label>
+        <label class="choice"><input type="radio" name="own" value="B"><span>Outcome B</span></label>
+      </div>
+    </div>
+    <div class="question" role="radiogroup" aria-labelledby="q-field">
+      <p id="q-field">Which would you prefer for your field as a whole?</p>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="field" value="A"><span>Outcome A</span></label>
+        <label class="choice"><input type="radio" name="field" value="B"><span>Outcome B</span></label>
+      </div>
+    </div>
+    <label class="block" for="pair-comment">Comments (optional)</label>
+    <textarea id="pair-comment"></textarea>
+    <p class="error" id="pair-error" aria-live="polite"></p>
+    <div class="nav">
+      <button class="secondary" id="btn-pair-back">Back</button>
+      <button id="btn-pair-next">Next</button>
+    </div>
+  </section>
+
+  <!-- Screen 11: final comment and submission -->
+  <section id="screen-final" hidden>
+    <h1>Almost done</h1>
+    <label class="block" for="general-comment">Any final comments? (optional)</label>
+    <p class="muted" style="margin-top:0">If any pair struck you as ill-posed, or if you found yourself relying on assumptions beyond what was written, we would be glad to hear about it.</p>
+    <textarea id="general-comment" style="min-height:110px"></textarea>
+    <p class="error" id="submit-error" aria-live="polite"></p>
+    <div class="nav">
+      <button class="secondary" id="btn-final-back">Back</button>
+      <button id="btn-submit">Submit</button>
+    </div>
+  </section>
+
+  <!-- Screen 12: thank you -->
+  <section id="screen-thanks" hidden>
+    <h1>Thank you</h1>
+    <p>Your answers have been sent. Thank you very much for your help. You can now close this page.</p>
+  </section>
+
+  <noscript><p class="error">This questionnaire needs JavaScript. Please enable it in your browser.</p></noscript>
+</main>
+
+<script>
+/* ------------------------------------------------------------------
+   Settings
+   ------------------------------------------------------------------ */
+// Web3Forms access key: submissions are emailed to Daniel J. Schad.
+var ACCESS_KEY = "899184e1-a655-430e-a452-1d5777bf6845";
+
+// The eight pairs. "A" and "B" are the original labels used in the
+// analysis; on screen, the order of A and B is randomized per participant.
+var PAIRS = [
+  { id: 1,
+    A: "A team spends 2 person-years and €2,000 testing whether a specific attentional-capture effect exists. The Bayes factor supports the effect; they claim a discovery and publish. In fact the effect does not exist (H0 true). The paper appears in a specialized journal, is cited 6 times, and no follow-up work builds on it.",
+    B: "A team spends 2 person-years and €2,000 on the same question. The Bayes factor supports the null; they conclude there is no effect and publish. In fact the effect does exist (H1 true). The null result becomes influential: it is cited 28 times, and two labs abandon planned studies on the topic." },
+  { id: 2,
+    A: "6 person-months, €300. The analysis supports the null on a contested question; the team correctly concludes there is no effect and publishes. Cited 7 times.",
+    B: "4 person-years, €25,000. The analysis supports the effect; the team correctly claims a discovery and publishes. Cited 35 times." },
+  { id: 3,
+    A: "1 person-year, €500. The team claims a discovery and publishes. The effect does not exist (H0 true). The paper appears in a minor outlet, is cited 3 times, and attracts little uptake.",
+    B: "2.5 person-years, €6,000. The data are inconclusive; the team publishes stating there is no evidence either way. H0 is in fact true. Cited 4 times." },
+  { id: 4,
+    A: "2 person-years, €3,000. The team correctly discovers an effect that settles a long-standing theoretical debate. The paper appears in a specialized journal, is cited 6 times, and has no noticeable effect on the team's careers.",
+    B: "2 person-years, €3,000. The team correctly discovers a small, theoretically minor effect. The paper attracts broad attention, is cited 45 times, and materially strengthens the lead researcher's tenure case." },
+  { id: 5,
+    A: "2 person-years, €4,000. A team reports a novel word-frequency effect in reading. The effect does not exist (H0 true). Cited 30 times; several labs build follow-up studies on it over the following years.",
+    B: "2 person-years, €4,000. A team reports that a cognitive-training procedure reduces attentional symptoms in adults with ADHD. The effect does not exist (H0 true). Cited 8 times; one clinic briefly pilots the procedure before a failed replication appears." },
+  { id: 6,
+    A: "1.5 person-years, €2,500. A direct replication of a textbook effect, cited over 150 times, finds evidence for the null. The original effect does not in fact exist, so the replication is correct. The replication itself is cited 10 times.",
+    B: "1.5 person-years, €2,500. A novel study finds evidence for a new effect. The effect does exist (H1 true). Cited 10 times." },
+  { id: 7,
+    A: "2 person-years, €3,000. The data are inconclusive; the team publishes stating there is no evidence either way. In fact H0 is true. Over the following years, two more labs invest substantial resources in the same question before it is finally settled as null.",
+    B: "2 person-years, €3,000. The data are inconclusive; the team publishes stating there is no evidence either way. In fact H1 is true. The real effect is discovered three years later by a better-powered study." },
+  { id: 8,
+    A: "1.5 person-years, €500. The team correctly claims a discovery of an effect that genuinely exists. Cited 20 times.",
+    B: "1 person-year, €25,000. The team correctly claims a discovery of the same kind. Cited 20 times." }
+];
+
+/* ------------------------------------------------------------------
+   Helpers
+   ------------------------------------------------------------------ */
+function randomInt(n) {
+  if (window.crypto && window.crypto.getRandomValues) {
+    var a = new Uint32Array(1);
+    window.crypto.getRandomValues(a);
+    return a[0] % n;
+  }
+  return Math.floor(Math.random() * n);
+}
+function shuffle(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = randomInt(i + 1);
+    var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+  }
+  return arr;
+}
+function makeId() {
+  var chars = "abcdefghijkmnpqrstuvwxyz23456789", s = "";
+  for (var i = 0; i < 8; i++) s += chars[randomInt(chars.length)];
+  return s;
+}
+function $(id) { return document.getElementById(id); }
+function csvField(s) {
+  s = String(s == null ? "" : s).replace(/\r?\n/g, " ").replace(/"/g, '""');
+  return '"' + s + '"';
+}
+
+/* ------------------------------------------------------------------
+   State
+   ------------------------------------------------------------------ */
+var state = {
+  id: makeId(),
+  start: null,
+  order: shuffle(PAIRS.map(function (p, i) { return i; })),   // display order of pairs
+  first: PAIRS.map(function () { return randomInt(2) === 0 ? "A" : "B"; }), // original label shown as "Outcome A"
+  answers: PAIRS.map(function () { return { own: null, field: null, comment: "" }; }),
+  submitted: false
+};
+var current = 0; // position in state.order
+
+var screens = ["screen-welcome", "screen-instructions", "screen-pair", "screen-final", "screen-thanks"];
+function show(name) {
+  screens.forEach(function (s) { $(s).hidden = (s !== name); });
+  window.scrollTo(0, 0);
+}
+function setProgress(fraction) { $("bar").style.width = Math.round(fraction * 100) + "%"; }
+
+// Displayed label ("A"/"B" on screen) <-> original label of the pair.
+function toOriginal(idx, shown) {
+  var first = state.first[idx];
+  var second = first === "A" ? "B" : "A";
+  return shown === "A" ? first : second;
+}
+function toShown(idx, original) {
+  if (!original) return null;
+  return original === state.first[idx] ? "A" : "B";
+}
+
+/* ------------------------------------------------------------------
+   Pair screens
+   ------------------------------------------------------------------ */
+function renderPair() {
+  var idx = state.order[current], pair = PAIRS[idx];
+  var first = state.first[idx], second = first === "A" ? "B" : "A";
+  $("pair-step").textContent = "Pair " + (current + 1) + " of " + PAIRS.length;
+  $("text-a").textContent = pair[first];
+  $("text-b").textContent = pair[second];
+  var ans = state.answers[idx];
+  ["own", "field"].forEach(function (q) {
+    var shown = toShown(idx, ans[q]);
+    document.querySelectorAll('input[name="' + q + '"]').forEach(function (r) {
+      r.checked = (r.value === shown);
+    });
+  });
+  $("pair-comment").value = ans.comment;
+  $("pair-error").textContent = "";
+  setProgress((current + 1) / (PAIRS.length + 1));
+  show("screen-pair");
+}
+function savePair() {
+  var idx = state.order[current], ans = state.answers[idx];
+  ["own", "field"].forEach(function (q) {
+    var r = document.querySelector('input[name="' + q + '"]:checked');
+    ans[q] = r ? toOriginal(idx, r.value) : null;
+  });
+  ans.comment = $("pair-comment").value.trim();
+  return ans.own && ans.field;
+}
+
+/* ------------------------------------------------------------------
+   Submission
+   ------------------------------------------------------------------ */
+function buildPayload() {
+  var minutes = Math.round((Date.now() - state.start) / 60000);
+  var general = $("general-comment").value.trim();
+  var position = {};
+  state.order.forEach(function (idx, k) { position[idx] = k + 1; });
+
+  var header = ["id", "duration_min"], row = [state.id, minutes];
+  PAIRS.forEach(function (p, i) {
+    header.push("p" + p.id + "_own", "p" + p.id + "_field", "p" + p.id + "_first", "p" + p.id + "_pos");
+    row.push(state.answers[i].own, state.answers[i].field, state.first[i], position[i]);
+  });
+  PAIRS.forEach(function (p, i) {
+    header.push("p" + p.id + "_comment");
+    row.push(csvField(state.answers[i].comment));
+  });
+  header.push("general_comment");
+  row.push(csvField(general));
+
+  var payload = {
+    access_key: ACCESS_KEY,
+    subject: "Pilot questionnaire: response " + state.id,
+    from_name: "Pilot questionnaire",
+    "Response ID": state.id,
+    "Duration (minutes)": minutes
+  };
+  PAIRS.forEach(function (p, i) {
+    var a = state.answers[i];
+    payload["Pair " + p.id] = "own research: " + a.own + " | field: " + a.field +
+      " | shown first: " + state.first[i] + " | position: " + position[i] +
+      (a.comment ? " | comment: " + a.comment : "");
+  });
+  payload["General comment"] = general || "(none)";
+  payload["Data line header"] = header.join(";");
+  payload["Data line"] = row.join(";");
+  return payload;
+}
+
+function submit() {
+  var btn = $("btn-submit"), err = $("submit-error");
+  btn.disabled = true; $("btn-final-back").disabled = true;
+  btn.textContent = "Sending...";
+  err.textContent = "";
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(buildPayload())
+  })
+  .then(function (res) {
+    return res.json().catch(function () { return {}; }).then(function (json) {
+      if (res.ok && json.success) {
+        state.submitted = true;
+        setProgress(1);
+        show("screen-thanks");
+      } else {
+        throw new Error(json.message || ("status " + res.status));
+      }
+    });
+  })
+  .catch(function (e) {
+    err.textContent = "Sending failed (" + e.message + "). Please check your internet connection and click “Submit” again.";
+    btn.disabled = false; $("btn-final-back").disabled = false;
+    btn.textContent = "Submit";
+  });
+}
+
+/* ------------------------------------------------------------------
+   Navigation
+   ------------------------------------------------------------------ */
+$("consent").addEventListener("change", function () { $("btn-start").disabled = !this.checked; });
+$("btn-start").addEventListener("click", function () {
+  if (!state.start) state.start = Date.now();
+  setProgress(0.5 / (PAIRS.length + 1));
+  show("screen-instructions");
+});
+$("btn-instr-back").addEventListener("click", function () { setProgress(0); show("screen-welcome"); });
+$("btn-instr-next").addEventListener("click", function () { current = 0; renderPair(); });
+$("btn-pair-back").addEventListener("click", function () {
+  savePair();
+  if (current === 0) { setProgress(0.5 / (PAIRS.length + 1)); show("screen-instructions"); }
+  else { current--; renderPair(); }
+});
+$("btn-pair-next").addEventListener("click", function () {
+  if (!savePair()) {
+    $("pair-error").textContent = "Please answer both questions before continuing.";
+    return;
+  }
+  if (current < PAIRS.length - 1) { current++; renderPair(); }
+  else { setProgress(PAIRS.length / (PAIRS.length + 1)); show("screen-final"); }
+});
+$("btn-final-back").addEventListener("click", function () { current = PAIRS.length - 1; renderPair(); });
+$("btn-submit").addEventListener("click", submit);
+document.querySelectorAll('#screen-pair input[type="radio"]').forEach(function (r) {
+  r.addEventListener("change", function () { $("pair-error").textContent = ""; });
+});
+
+// Warn before leaving the page with unsent answers.
+window.addEventListener("beforeunload", function (e) {
+  if (state.start && !state.submitted) { e.preventDefault(); e.returnValue = ""; }
+});
+</script>
+</body>
+</html>
