@@ -181,8 +181,8 @@
 // Web3Forms access key: submissions are emailed to Daniel J. Schad.
 var ACCESS_KEY = "899184e1-a655-430e-a452-1d5777bf6845";
 
-// The eight pairs. "A" and "B" are the original labels used in the
-// analysis; on screen, the order of A and B is randomized per participant.
+// The eight pairs, in the same order and wording as in the Word version
+// (Research_Outcome_Preferences.docx). Outcome A is always shown first.
 var PAIRS = [
   { id: 1,
     A: "A team spends 2 person-years and €2,000 testing whether a specific attentional-capture effect exists. The Bayes factor supports the effect; they claim a discovery and publish. In fact the effect does not exist (H0 true). The paper appears in a specialized journal, is cited 6 times, and no follow-up work builds on it.",
@@ -200,7 +200,7 @@ var PAIRS = [
     A: "2 person-years, €4,000. A team reports a novel word-frequency effect in reading. The effect does not exist (H0 true). Cited 30 times; several labs build follow-up studies on it over the following years.",
     B: "2 person-years, €4,000. A team reports that a cognitive-training procedure reduces attentional symptoms in adults with ADHD. The effect does not exist (H0 true). Cited 8 times; one clinic briefly pilots the procedure before a failed replication appears." },
   { id: 6,
-    A: "1.5 person-years, €2,500. A direct replication of a textbook effect, cited over 150 times, finds evidence for the null. The original effect does not in fact exist, so the replication is correct. The replication itself is cited 10 times.",
+    A: "1.5 person-years, €2,500. A direct replication of a textbook effect — cited over 150 times — finds evidence for the null. The original effect does not in fact exist, so the replication is correct. The replication itself is cited 10 times.",
     B: "1.5 person-years, €2,500. A novel study finds evidence for a new effect. The effect does exist (H1 true). Cited 10 times." },
   { id: 7,
     A: "2 person-years, €3,000. The data are inconclusive; the team publishes stating there is no evidence either way. In fact H0 is true. Over the following years, two more labs invest substantial resources in the same question before it is finally settled as null.",
@@ -221,13 +221,6 @@ function randomInt(n) {
   }
   return Math.floor(Math.random() * n);
 }
-function shuffle(arr) {
-  for (var i = arr.length - 1; i > 0; i--) {
-    var j = randomInt(i + 1);
-    var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-  }
-  return arr;
-}
 function makeId() {
   var chars = "abcdefghijkmnpqrstuvwxyz23456789", s = "";
   for (var i = 0; i < 8; i++) s += chars[randomInt(chars.length)];
@@ -245,12 +238,10 @@ function csvField(s) {
 var state = {
   id: makeId(),
   start: null,
-  order: shuffle(PAIRS.map(function (p, i) { return i; })),   // display order of pairs
-  first: PAIRS.map(function () { return randomInt(2) === 0 ? "A" : "B"; }), // original label shown as "Outcome A"
   answers: PAIRS.map(function () { return { own: null, field: null, comment: "" }; }),
   submitted: false
 };
-var current = 0; // position in state.order
+var current = 0; // index of the pair currently shown
 
 var screens = ["screen-welcome", "screen-instructions", "screen-pair", "screen-final", "screen-thanks"];
 function show(name) {
@@ -259,31 +250,17 @@ function show(name) {
 }
 function setProgress(fraction) { $("bar").style.width = Math.round(fraction * 100) + "%"; }
 
-// Displayed label ("A"/"B" on screen) <-> original label of the pair.
-function toOriginal(idx, shown) {
-  var first = state.first[idx];
-  var second = first === "A" ? "B" : "A";
-  return shown === "A" ? first : second;
-}
-function toShown(idx, original) {
-  if (!original) return null;
-  return original === state.first[idx] ? "A" : "B";
-}
-
 /* ------------------------------------------------------------------
    Pair screens
    ------------------------------------------------------------------ */
 function renderPair() {
-  var idx = state.order[current], pair = PAIRS[idx];
-  var first = state.first[idx], second = first === "A" ? "B" : "A";
-  $("pair-step").textContent = "Pair " + (current + 1) + " of " + PAIRS.length;
-  $("text-a").textContent = pair[first];
-  $("text-b").textContent = pair[second];
-  var ans = state.answers[idx];
+  var pair = PAIRS[current], ans = state.answers[current];
+  $("pair-step").textContent = "Pair " + pair.id + " of " + PAIRS.length;
+  $("text-a").textContent = pair.A;
+  $("text-b").textContent = pair.B;
   ["own", "field"].forEach(function (q) {
-    var shown = toShown(idx, ans[q]);
     document.querySelectorAll('input[name="' + q + '"]').forEach(function (r) {
-      r.checked = (r.value === shown);
+      r.checked = (r.value === ans[q]);
     });
   });
   $("pair-comment").value = ans.comment;
@@ -292,10 +269,10 @@ function renderPair() {
   show("screen-pair");
 }
 function savePair() {
-  var idx = state.order[current], ans = state.answers[idx];
+  var ans = state.answers[current];
   ["own", "field"].forEach(function (q) {
     var r = document.querySelector('input[name="' + q + '"]:checked');
-    ans[q] = r ? toOriginal(idx, r.value) : null;
+    ans[q] = r ? r.value : null;
   });
   ans.comment = $("pair-comment").value.trim();
   return ans.own && ans.field;
@@ -307,13 +284,11 @@ function savePair() {
 function buildPayload() {
   var minutes = Math.round((Date.now() - state.start) / 60000);
   var general = $("general-comment").value.trim();
-  var position = {};
-  state.order.forEach(function (idx, k) { position[idx] = k + 1; });
 
   var header = ["id", "duration_min"], row = [state.id, minutes];
   PAIRS.forEach(function (p, i) {
-    header.push("p" + p.id + "_own", "p" + p.id + "_field", "p" + p.id + "_first", "p" + p.id + "_pos");
-    row.push(state.answers[i].own, state.answers[i].field, state.first[i], position[i]);
+    header.push("p" + p.id + "_own", "p" + p.id + "_field");
+    row.push(state.answers[i].own, state.answers[i].field);
   });
   PAIRS.forEach(function (p, i) {
     header.push("p" + p.id + "_comment");
@@ -332,7 +307,6 @@ function buildPayload() {
   PAIRS.forEach(function (p, i) {
     var a = state.answers[i];
     payload["Pair " + p.id] = "own research: " + a.own + " | field: " + a.field +
-      " | shown first: " + state.first[i] + " | position: " + position[i] +
       (a.comment ? " | comment: " + a.comment : "");
   });
   payload["General comment"] = general || "(none)";
