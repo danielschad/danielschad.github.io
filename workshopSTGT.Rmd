@@ -70,6 +70,29 @@ output:
 .stgt-fig-key { font-size: 14px; font-weight: 700; }
 .stgt-fig-key.st { fill: #a35200; }
 .stgt-fig-key.gt { fill: #337ab7; }
+/* Programme: one row per slot (time | title, speaker) */
+.stgt-day-theme { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #777; margin: -2px 0 10px; }
+.stgt-day, .stgt-posters { list-style: none; padding: 0; margin: 0 0 10px; max-width: 46em; border-top: 1px solid #e3e3e3; }
+.stgt-day li {
+  display: grid; grid-template-columns: 7.4em minmax(0, 1fr); column-gap: 14px;
+  padding: 9px 0 9px 10px; border-bottom: 1px solid #e3e3e3; border-left: 3px solid transparent;
+  font-size: 15px; line-height: 1.45; color: #333;
+}
+.stgt-day li.stgt-talk { border-left-color: rgba(51, 122, 183, .55); }
+.stgt-day li.stgt-break { color: #777; font-style: italic; }
+.stgt-time { color: #666; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.stgt-talk-title { display: block; color: #222; font-weight: 600; }
+.stgt-who { display: block; margin-top: 2px; color: #666; font-size: 14px; }
+.stgt-posters li {
+  display: grid; grid-template-columns: 3.2em minmax(0, 1fr); column-gap: 10px;
+  padding: 8px 0; border-bottom: 1px solid #e3e3e3; font-size: 15px; line-height: 1.45;
+}
+.stgt-posters .stgt-talk-title { font-weight: 400; }
+.stgt-pnum {
+  justify-self: start; align-self: start; margin-top: 2px; padding: 1px 6px; border-radius: 3px;
+  background: #4a5a6e; color: #fff; font-size: 12px; font-weight: 700; line-height: 1.5;
+}
+
 @keyframes stgt-pop { from { opacity: 0; transform: scale(.3); } to { opacity: 1; transform: scale(1); } }
 @keyframes stgt-fade { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {
@@ -88,6 +111,7 @@ output:
   .stgt-facts dl { grid-template-columns: minmax(0, 1fr); }
   .stgt-facts dt { padding-bottom: 0; }
   .stgt-facts dd { border-top: 0; padding-top: 2px; }
+  .stgt-day li { grid-template-columns: minmax(0, 1fr); row-gap: 1px; }
 }
 </style>
 
@@ -100,7 +124,7 @@ output:
 <span class="stgt-lead-note">Attend on site or online via Zoom</span></p>
 <p class="stgt-actions">
 <a class="btn btn-primary btn-lg" href="mailto:stgtworkshop.potsdam@gmail.com?subject=Registration%3A%20Sign-%20and%20goal-tracking%20workshop%2C%20Potsdam%202026&amp;body=Dear%20organisers%2C%0D%0A%0D%0AI%20would%20like%20to%20attend%20the%20workshop%20on%20sign-%20and%20goal-tracking%20in%20Potsdam%20%2820%E2%80%9322%20November%202026%29.%0D%0A%0D%0AName%3A%0D%0AAffiliation%3A%0D%0A%0D%0AI%20would%20like%20to%20attend%3A%20on%20site%20in%20Potsdam%20%2F%20online%20via%20Zoom%0D%0A%0D%0AI%20would%20like%20to%20present%20a%20poster%20%28on%20site%20only%29%3A%20yes%20%2F%20no%0D%0APoster%20title%3A%0D%0APoster%20abstract%3A%0D%0A%0D%0ABest%20wishes%2C%0D%0A">Register by email</a>
-<a class="btn btn-default btn-lg" href="#share">Share this page</a>
+<a class="btn btn-default btn-lg" href="#programme">Programme</a>
 </p>
 </div>
 <div class="col-sm-5">
@@ -137,19 +161,22 @@ output:
 
 ::: {.stgt-facts}
 Dates
-:   Friday 20 (14:00), to Sunday 22 (14:00) November 2026
+:   Friday 20 November (14:00) to Sunday 22 November (14:30), 2026
 
 Location
-:   Potsdam, Germany, close to the [Kongresshotel Potsdam](https://www.kongresshotel-potsdam.com/)
+:   Lecture hall A2.06, Am Luftschiffhafen, Potsdam, Germany, close to the [Kongresshotel Potsdam](https://www.kongresshotel-potsdam.com/)
+
+Programme
+:   [Schedule below](#programme) · [Programme and abstracts (PDF)](doc/workshopSTGT-programme.pdf)
 
 Registration
-:   On-site places are limited; online participation via Zoom is open — please email us
+:   On-site places are limited; online participation via Zoom is open — please email us. On-site check-in: Friday, 14:00–15:00, at the venue
 
 Participation fee
 :   €70 on site, covering some food and drinks; online attendance is free
 
 Posters
-:   On site only; welcome from researchers at all career stages
+:   Poster session on Saturday, 17:15–18:45, on site; posters up to A0, mounting material provided
 
 Contact
 :   [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com)
@@ -165,12 +192,93 @@ A central aim of the meeting will be to compare the different approaches current
 
 The sessions are intended to emphasise discussion and exchange, with time to explain not only findings but also the practical and methodological details of how the work is carried out.
 
-## Speakers and contributors
+## Programme {#programme}
 
-Speakers and contributors currently include (in alphabetical order):
+All times are Central European Time (CET, UTC+1). Talks marked (online) are given remotely. The programme booklet contains the abstracts of all talks and posters.
+
+[Programme and abstracts (PDF, 6 MB)](doc/workshopSTGT-programme.pdf){.btn .btn-default}
+
+### Day 1 · Friday, 20 November {#day-1}
+
+```{=html}
+<div class="stgt-day-theme">Animal foundations</div>
+<ul class="stgt-day">
+<li><span class="stgt-time">14:00–15:00</span><span>Registration</span></li>
+<li><span class="stgt-time">15:00–15:30</span><span>Welcome &amp; introduction<span class="stgt-who">Daniel J. Schad</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">15:30–16:30</span><span><span class="stgt-talk-title">Leveraging Individual Differences in Cue-Motivated Behavior to Identify Neural Mechanisms of Inhibitory Control</span><span class="stgt-who">Shelly Flagel (online), University of Michigan</span></span></li>
+<li class="stgt-break"><span class="stgt-time">16:30–17:00</span><span>Coffee break</span></li>
+<li class="stgt-talk"><span class="stgt-time">17:00–18:00</span><span><span class="stgt-talk-title">Sign-Tracking ≠ Sign-Trackers</span><span class="stgt-who">Terry Robinson (online), University of Michigan</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">18:00–18:30</span><span><span class="stgt-talk-title">Individual differences and neural circuit mechanisms of cue-guided learning</span><span class="stgt-who">Benjamin Saunders (online), University of Minnesota</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">18:30–19:00</span><span><span class="stgt-talk-title">Does reward uncertainty induce aversive sign-tracking?</span><span class="stgt-who">Patrick Anselme, Ruhr Universität Bochum</span></span></li>
+<li><span class="stgt-time">19:30</span><span>Workshop dinner at the Zeppelin Restaurant, Kongresshotel Potsdam</span></li>
+</ul>
+```
+
+### Day 2 · Saturday, 21 November {#day-2}
+
+```{=html}
+<div class="stgt-day-theme">Computational modelling and human data</div>
+<ul class="stgt-day">
+<li class="stgt-talk"><span class="stgt-time">09:00–09:45</span><span><span class="stgt-talk-title">Sign-tracking and goal-tracking behaviours as an interplay between model-based and model-free learning processes</span><span class="stgt-who">François Cinotti, Sorbonne Université</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">09:45–10:45</span><span><span class="stgt-talk-title">HeiDI: From general processes to individual differences</span><span class="stgt-who">Robert Honey, Cardiff University</span></span></li>
+<li class="stgt-break"><span class="stgt-time">10:45–11:15</span><span>Coffee break</span></li>
+<li class="stgt-talk"><span class="stgt-time">11:15–12:15</span><span><span class="stgt-talk-title">Tracking the trackers: evidence, measurement, and open challenges from a decade of human sign-tracking and goal-tracking research</span><span class="stgt-who">Sara Garofalo, University of Bologna</span></span></li>
+<li class="stgt-break"><span class="stgt-time">12:15–13:15</span><span>Lunch break</span></li>
+<li class="stgt-talk"><span class="stgt-time">13:15–14:15</span><span><span class="stgt-talk-title">Dissociating neural learning signals in human sign- and goal-trackers</span><span class="stgt-who">Daniel J. Schad, HMU Health and Medical University</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">14:15–15:15</span><span><span class="stgt-talk-title">When the Signal Becomes the Target: Sign-Tracking and the Brain’s Response to Reward</span><span class="stgt-who">Martin Paulus, Laureate Institute for Brain Research</span></span></li>
+<li class="stgt-break"><span class="stgt-time">15:15–15:45</span><span>Coffee break</span></li>
+<li class="stgt-talk"><span class="stgt-time">15:45–16:45</span><span><span class="stgt-talk-title">Human sign- and goal-tracking: From Basic Mechanisms to Translational Challenges</span><span class="stgt-who">Michelle Heck, University of Liège</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">16:45–17:15</span><span><span class="stgt-talk-title">Substance-related Cognitive Biases in Humans, Sign-Tracking?</span><span class="stgt-who">Reinout Wiers (online), University of Amsterdam</span></span></li>
+<li><span class="stgt-time">17:15–18:45</span><span>Poster session (<a href="#posters">P1–P13</a>)</span></li>
+</ul>
+```
+
+### Day 3 · Sunday, 22 November {#day-3}
+
+```{=html}
+<div class="stgt-day-theme">More data, including rodents and humans</div>
+<ul class="stgt-day">
+<li class="stgt-talk"><span class="stgt-time">09:00–09:30</span><span><span class="stgt-talk-title">Beyond Incentive Salience: Sign-Tracking, Goal-Tracking, and Contextual Control</span><span class="stgt-who">Jonathan Morrow, University of Michigan</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">09:30–10:00</span><span><span class="stgt-talk-title">Sign-Tracking as a Transdiagnostic Trait: Thalamic Circuits Linking Reward and Fear Processing</span><span class="stgt-who">Cristina Orsini, Sapienza University of Rome</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">10:00–10:30</span><span><span class="stgt-talk-title">Reproducible human reward imaging phenotypes exhibit differential sensitivity to dopamine D2 receptor antagonism</span><span class="stgt-who">Nicola Sambuco, University of Bari Aldo Moro</span></span></li>
+<li class="stgt-break"><span class="stgt-time">10:30–11:00</span><span>Coffee break</span></li>
+<li class="stgt-talk"><span class="stgt-time">11:00–12:00</span><span><span class="stgt-talk-title">From chocolate to cigarettes: Sign-tracking-like brain responses to food cues predict cue-induced eating and smoking lapse</span><span class="stgt-who">Francesco Versace, The University of Texas</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">12:00–12:30</span><span><span class="stgt-talk-title">Do human sign- and goal-trackers differ in model-free and model-based behavior, and how can we identify them at scale?</span><span class="stgt-who">Laura Wirth, HMU Health and Medical University</span></span></li>
+<li class="stgt-break"><span class="stgt-time">12:30–13:30</span><span>Lunch break</span></li>
+<li class="stgt-talk"><span class="stgt-time">13:30–13:45</span><span><span class="stgt-talk-title">Enhanced Pavlovian-to-instrumental transfer in human sign-trackers: bias or slower updating?</span><span class="stgt-who">Romana Caposova, HMU Health and Medical University</span></span></li>
+<li class="stgt-talk"><span class="stgt-time">13:45–14:15</span><span><span class="stgt-talk-title">Sign- and goal-tracking in human alcohol dependence</span><span class="stgt-who">Nassim Sadedin, HMU Health and Medical University</span></span></li>
+<li><span class="stgt-time">14:15–14:30</span><span>Concluding remarks<span class="stgt-who">Daniel J. Schad</span></span></li>
+</ul>
+```
+
+### Posters {#posters}
+
+```{=html}
+<div class="stgt-day-theme">Poster session · Saturday, 17:15–18:45</div>
+<ul class="stgt-posters">
+<li><span class="stgt-pnum">P1</span><span><span class="stgt-talk-title">Pavlovian bias on decision-making as a key marker distinguishing human sign-trackers from goal-trackers: a comprehensive meta-analysis</span><span class="stgt-who">Marco Badioli</span></span></li>
+<li><span class="stgt-pnum">P2</span><span><span class="stgt-talk-title">Beyond the craved substance? Cue-induced shifts in valuation and pupil dilation across the impulsive-compulsive spectrum</span><span class="stgt-who">Erik Lukas Bode</span></span></li>
+<li><span class="stgt-pnum">P3</span><span><span class="stgt-talk-title">Measures of Human Sign- and Goal-Tracking Differ Across Primary and Secondary Rewards</span><span class="stgt-who">Mariya V. Cherkasova</span></span></li>
+<li><span class="stgt-pnum">P4</span><span><span class="stgt-talk-title">Role of the inter-trial interval in the expression of appetitive conditioned responses</span><span class="stgt-who">François Cinotti</span></span></li>
+<li><span class="stgt-pnum">P5</span><span><span class="stgt-talk-title">Of rats and men: Progress in the study of Pavlovian cue processing &amp; risk for substance use disorder in humans</span><span class="stgt-who">Lora M. Cope</span></span></li>
+<li><span class="stgt-pnum">P6</span><span><span class="stgt-talk-title">Behavioral and computational evidence on how Pavlovian cues shape the adaptation to volatility in sign-trackers</span><span class="stgt-who">Claudio Danti</span></span></li>
+<li><span class="stgt-pnum">P7</span><span><span class="stgt-talk-title">Toward a Sex-Informed Model of Sign- and Goal-Tracking</span><span class="stgt-who">Luigi Albert Enrico Degni</span></span></li>
+<li><span class="stgt-pnum">P8</span><span><span class="stgt-talk-title">Chronic Stress and Pavlovian-to-Instrumental Transfer in Alcohol Use Disorder</span><span class="stgt-who">Samanda Krasniqi</span></span></li>
+<li><span class="stgt-pnum">P9</span><span><span class="stgt-talk-title">Implicit Expectations: Neural Evidence for Reward Pavlovian Conditioning in the Absence of Contingency Awareness</span><span class="stgt-who">Mateo Leganes-Fonteneau</span></span></li>
+<li><span class="stgt-pnum">P10</span><span><span class="stgt-talk-title">Value-modulated attentional capture is sensitive to explicit knowledge</span><span class="stgt-who">Pablo Martínez López</span></span></li>
+<li><span class="stgt-pnum">P11</span><span><span class="stgt-talk-title">Moving the CS and reward location improves gaze measures of sign-tracking: a simulation study</span><span class="stgt-who">Lorenzo Mattioni</span></span></li>
+<li><span class="stgt-pnum">P12</span><span><span class="stgt-talk-title">Effects of reward devaluation on value-modulated attentional capture (VMAC) in the Context of Tobacco Dependence</span><span class="stgt-who">Lana Mrkonja</span></span></li>
+<li><span class="stgt-pnum">P13</span><span><span class="stgt-talk-title">Pavlovian Bias or Explicit Strategy? Awareness and Individual Differences in Human PIT</span><span class="stgt-who">Adrian Nichici</span></span></li>
+</ul>
+```
+
+## Speakers
+
+In alphabetical order:
 
 ::: {.stgt-names}
 - Patrick Anselme
+- Romana Caposova
 - François Cinotti
 - Shelly Flagel (online)
 - Sara Garofalo
@@ -180,17 +288,20 @@ Speakers and contributors currently include (in alphabetical order):
 - Cristina Orsini
 - Martin Paulus
 - Terry Robinson (online)
+- Nassim Sadedin
 - Nicola Sambuco
 - Benjamin Saunders (online)
+- Daniel J. Schad
 - Francesco Versace
 - Reinout Wiers (online)
+- Laura Wirth
 :::
 
-Ralf Engbert and Daniel J. Schad facilitate the workshop, and further contributors will join the programme.
+The workshop is organised by Daniel J. Schad and Ralf Engbert.
 
 ## Taking part
 
-On-site places are limited; online participation via Zoom is open — please email us at [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com) and let us know whether you would like to join us in Potsdam or online. We are happy to provide further details on the programme, venue, and accommodation.
+On-site places are limited; online participation via Zoom is open — please email us at [stgtworkshop.potsdam@gmail.com](mailto:stgtworkshop.potsdam@gmail.com) and let us know whether you would like to join us in Potsdam or online. Online participants receive the Zoom link by email. We are happy to help with questions about accommodation.
 
 Participation on site is €70, which covers some food and drinks. **Online attendance is free.**
 
@@ -202,7 +313,11 @@ A poster session will run alongside the workshop, open to researchers at all car
 
 ## Venue and accommodation
 
-The workshop takes place in Potsdam, close to the [Kongresshotel Potsdam](https://www.kongresshotel-potsdam.com/). Potsdam borders Berlin to the south-west, and the nearest airport is Berlin Brandenburg (BER). Details on the venue and on accommodation are available on request.
+The workshop takes place in lecture hall (Hörsaal) A2.06, close to the [Kongresshotel Potsdam](https://www.kongresshotel-potsdam.com/), Am Luftschiffhafen, Potsdam ([entrance on Google Maps](https://www.google.com/maps/search/?api=1&query=52.374194%2C13.014028)). Potsdam borders Berlin to the south-west.
+
+The nearest train station is Potsdam Pirschheide, about a six-minute walk from the venue. From Berlin Brandenburg Airport (BER), the regional train RB22 runs hourly and directly to Potsdam Pirschheide; please check [int.bahn.de](https://int.bahn.de/en) for connections. The programme booklet includes a map of the walk from the station.
+
+Details on accommodation are available on request.
 
 ## Share this page {#share}
 
